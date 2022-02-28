@@ -1,8 +1,5 @@
 # Final-Year-Project
 Final Year
-# LightPad
-
-### Create documents using LightPad!
 
 # Table of Contents
 
