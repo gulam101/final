@@ -9,10 +9,8 @@ button,
 
 /* Ttile & Sub title! */
 .container-title {
-  border: 1px solid #2a9df4;
   margin-left: 30%;
   margin-right: 30%;
-  position: static;
 }
 
 .container-title h1 {
@@ -342,8 +340,20 @@ i:hover {
   opacity: 0.8;
 }
 
+.coursebar-container {
+  background-color: #121212;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.toolbar {
+  text-align: center;
+  color: #2a9df4;
+  border-radius: 1px solid #2a9df4;
+}
+
 .footer-container {
-  padding-top: 500px;
+  padding-top: 100px;
 }
 
 footer {

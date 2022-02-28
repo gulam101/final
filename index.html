@@ -200,6 +200,53 @@ input[type=text], input[type=password] {
   </div>
 
 
+
+<style>
+  .search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
+
+
+
 <!-- Split up enrollment courses so each section has its own training -->
 
 
@@ -208,7 +255,24 @@ input[type=text], input[type=password] {
       <h1 class="start">Enroll Into Courses</h1>
         <p style="text-align: center;">Hover over the excerise to get started</p>
 
-        <!-- Running Section -->
+
+        <!-- Search bar -->
+        <!-- <div class="wrap">
+          <div class="search">
+             <input type="text" class="searchTerm" placeholder="What are you looking for?">
+             <button type="submit" class="searchButton">
+               <i class="fa fa-search"></i>
+            </button>
+          </div>
+       </div> -->
+
+       <!-- Move search bar somewhere else -->
+
+       <!-- Temp solution, just using this as an example -->
+       <!-- https://stackoverflow.com/questions/12498604/create-a-search-box-to-find-text-on-page -->
+
+
+        <!-- Legs Section Section -->
         <div class="container">
           <div class="row">
             <div class="col-sm">
@@ -259,21 +323,25 @@ input[type=text], input[type=password] {
         <!-- End of enrollment section div (for leg) -->
       </div>
 
-             <!-- Arms -->
+  <div class="spacer"></div>
 
-             <br>
+  <style>
+    .spacer {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  </style>
 
- <!-- Enrollment Section -->
     <div class="enrollSection">
-        <!-- Running Section -->
+        <!-- Arms -->
         <div class="container">
           <div class="row">
             <div class="col-sm">
               <div class="container-sm">
-                <img src="/img/beginner running.jpg" alt="Train Beginner Legs">
+                <img src="/img/beginner running.jpg" alt="Train Beginner Arms">
                 <div class="overlay">
                   <div class="text">
-                    <button class="coursebtn animation"> Beginner Legs </button>
+                    <button class="coursebtn"> Beginner Arms </button>
                   </div>
                 </div>
               </div>
@@ -281,10 +349,10 @@ input[type=text], input[type=password] {
             
             <div class="col-sm">
               <div class="container-sm">
-                <img src="/img/beginner running.jpg" alt="Train Intermediate Legs">
+                <img src="/img/beginner running.jpg" alt="Train Intermediate Arms">
                 <div class="overlay">
                   <div class="text">
-                    <button class="coursebtn animation"> Intermediate Legs </button>
+                    <button class="coursebtn"> Intermediate Arms </button>
                   </div>
                 </div>
               </div>
@@ -292,10 +360,10 @@ input[type=text], input[type=password] {
         
             <div class="col-sm">
               <div class="container-sm">
-                <img src="/img/beginner running.jpg" alt="Train Advanced Legs">
+                <img src="/img/beginner running.jpg" alt="Train Advanced Arms">
                 <div class="overlay">
                   <div class="text">
-                    <button class="coursebtn animation"> Advanced Legs </button>
+                    <button class="coursebtn"> Advanced Arms </button>
                   </div>
                 </div>
               </div>
@@ -333,84 +401,20 @@ input[type=text], input[type=password] {
           </div>
         </div>
     <!-- End of Enrollment Secttion -->
-
- <!-- Enrollment Section -->
- <div class="enrollSection">
-  <h1 class="start">Enroll Into Courses</h1>
-    <p style="text-align: center;">Hover over the excerise to get started</p>
-    <!-- Running Section -->
-    <div class="container">
-      <div class="row">
-        <div class="col-sm">
-          <div class="container-sm">
-            <img src="/img/beginner running.jpg" alt="Train Beginner Legs">
-            <div class="overlay">
-              <div class="text">
-                <button class="coursebtn"> Beginner Legs </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-sm">
-          <div class="container-sm">
-            <img src="/img/beginner running.jpg" alt="Train Intermediate Legs">
-            <div class="overlay">
-              <div class="text">
-                <button class="coursebtn"> Intermediate Legs </button>
-              </div>
-            </div>
-          </div>
-          </div>
-    
-        <div class="col-sm">
-          <div class="container-sm">
-            <img src="/img/beginner running.jpg" alt="Train Advanced Legs">
-            <div class="overlay">
-              <div class="text">
-                <button class="coursebtn"> Advanced Legs </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm">
-          <div class="container-sm">
-            <img src="/img/beginner running.jpg" alt="Train Beginner Arms">
-            <div class="overlay">
-              <div class="text">
-                <button class="coursebtn animation"> Beginner Arms </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm">
-          <div class="container-sm">
-            <img src="/img/beginner running.jpg" alt="Train Intermediate Arms">
-            <div class="overlay">
-              <div class="text">
-                <button class="coursebtn animation"> Inntermediate </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm">
-          <div class="container-sm">
-            <img src="/img/beginner running.jpg" alt="Train Advanced Arms">
-            <div class="overlay">
-              <div class="text">
-                <button class="coursebtn animation"> Advanced Arms </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- End of Enrollment Secttion -->
 </div>
 
-    <!-- End of Enrollment Secttion -->
-
+<br>
+        <!-- Menu below bar -->
+        <p>Find more courses</p>
+        <div class="coursebar-container">   
+          <div class="toolbar">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">...</a>
+          </div>
+        </div>
 
 
     <!-- Footer -->

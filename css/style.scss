@@ -19,10 +19,8 @@ button,
 
 /* Ttile & Sub title! */
 .container-title {
-	border: 1px solid #2a9df4;
     margin-left: 30%;
     margin-right: 30%;
-     position: static;
 }
 
 .container-title h1 {
@@ -37,8 +35,6 @@ button,
     text-align: center;
 }
 // End of title
-
-
 
 // 1. Login Button & Register button in top right corner (both share the same class)
 .signup,
@@ -379,10 +375,25 @@ i:hover {
 
 // End of Enrollment Section
 
+
+// Toolbar menu for courses
+.coursebar-container {
+	background-color: #121212;
+	margin-left: 30%;
+	margin-right: 30%;
+  }
+
+  .toolbar {
+	text-align: center;
+	color: $hyperlinks;
+	border-radius: 1px solid $hyperlinks;
+  }
+
+
 // Footer
 .footer-container {
 	// Forces the container to make space between each other!
-	padding-top: 500px;
+	padding-top: 100px;
 }
 
 footer {
