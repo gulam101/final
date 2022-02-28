@@ -123,4 +123,3 @@ The user can change the font size, colour and insert the date/time in the docume
 
 ### Credits:
 - Gulam Qasim (Author)
-- Ainsley Crawford (Tester)
