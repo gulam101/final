@@ -1,0 +1,8 @@
+Notes
+1. Background colour has not changed to grey hex (fixed)
+2. Footer needs to be included (Done)
+3. Scrap old Navbar and implement a new one (Started)
+4. Change font weight (not started)
+5. Make modifications to login (Done!)
+6. Login menu breaks when placed in SaSS folder, why? (fixed)
+7. Create the account centre tomorrow!

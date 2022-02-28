@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Healthy excerise online</title>
+</head>
+<body>
+
+      <!-- Start of side NavBar -->
+      <div class="nav">
+        <div class="navContainer">
+          <ul>
+            <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+            <li><a class="underline-anim" href="#">My Account</a></li>
+            <li><a class="underline-anim" href="#">More courses</a></li>
+            <li><a class="underline-anim" href="#">Articles</a></li>
+            <li><a class="underline-anim" href="#">Help</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End of Side NavBar -->
+
+  <!-- Top menu bar -->
+  <div class="top-menu-bar">
+    <div class="btn-container">
+      <button onclick="document.getElementById('id01').style.display='block' "class="sign-up animation" style="width:auto;">Login</button>
+      <button onclick="document.getElementById('createAccont').style.display='block' "class="sign-up animation" style="width:auto;">Register</button>
+    </div>
+    <div class="container-title">
+      <div class="content">
+        <h1>Inspire to be yourself</h1>
+        <p>Control who you are!</p>
+      </div>
+    </div>
+
+
+<!-- Shares similar features from the previous modal! -->
+<div id="createAccont" class="modal">
+
+  <!-- Signup menu -->
+  <div class="modal-content">
+    <span onclick="document.getElementById('createAccont').style.display='none'" class="close" title="Close Menu">&times;</span>
+    <div class="container">
+      <h1 style="text-align: center;">Create Account</h1>
+      <label for="uname"><b>First Name:</b></label>
+      <input type="text" placeholder="Enter your First Name" name="uname" required>
+
+      <label for="psw"><b>Last Name:</b></label>
+      <input type="text" placeholder="Enter your Last Name" name="psw" required>
+
+      <label for="psw"><b>Email Address:</b></label>
+      <input type="text" placeholder="Somebody@gmail.com" name="psw" required>
+
+      <label for="psw"><b>Repeat Email Address:</b></label>
+      <input type="text" placeholder="Confirm Email Address" name="psw" required>
+
+      <!-- Checkbox for "Where did you find us?" -->
+      <label class="rememberBtn">
+        <p>Where did you hear about us?</p>
+        <input type="checkbox" name="remember"> YouTube
+        <br>
+        <input type="checkbox" name="remember"> Friend Recommendation
+        <br>
+        <input type="checkbox" name="remember"> Local Gym
+        <br>
+        <input type="checkbox" name="remember"> Events
+      </label>
+
+      <!-- Terms and privacy agreement box -->
+      <br>
+      <label class="rememberBtn">
+        <input required type="checkbox" name="remember"> I agree to the <a href="/dist/privacy.html" target="_new">terms & privacy</a>
+      </label>
+
+      <!-- <div class="container">
+        <p style="text-align: ;">Please enter your date of birth</p>
+        <form action="/action_page.php">
+          <label for="birthday">Birthday:</label>
+          <input type="date" id="birthday" name="birthday">
+          <input type="submit">
+        </form>
+      </div> -->
+
+                  <!-- For Google Captcha -->
+      <!-- <button class="g-recaptcha" 
+      data-sitekey="reCAPTCHA_site_key" 
+      data-callback='onSubmit' 
+      data-action='submit'>Submit</button>
+         -->
+      <button type="submit" class="register" >Countinue</button>
+
+    </div>
+  </div>
+
+</div>
+  
+  <!-- End of top menu bar -->
+
+<!-- Login menu -->
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="warning-info">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Menu">&times;</span>
+     <h1>Login</h1>
+      <br>
+      <p>Please note, sharing passwords is stricly forbidden on the website
+    and can lead to the account being hacked or suspended. You can use the family settings to create an account
+  </p>
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username:</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password:</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit" class="lgn" >Login</button>
+      <label class="rememberBtn">
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+      <button class="g-recaptcha" 
+        data-sitekey="reCAPTCHA_site_key" 
+        data-callback='onSubmit' 
+        data-action='submit'>Submit</button>
+      <br>
+      <span class="create-account">Click here to <a href="createAccount">Create Account</a></span>
+    </div>
+
+    <div class="container">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="forgot-password">Click here if you <a href="#fgtpass">Forgot Password</a></span>
+    </div>
+  </form>
+</div>
+
+
+<!-- This style is needed for the modal -->
+<style>
+.modal-content animate {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #222222;
+  margin: 5% auto 15% auto;
+  border: #2a9df4;
+  width: 80%;
+}
+
+.close {
+	position: absolute;
+	right: 25px;
+	top: 0;
+	color: #fff;
+	font-size: 35px;
+	font-weight: bold;
+  }
+
+  .close:hover, .close:focus {
+	color: #2a9df4;
+	cursor: pointer;
+  }
+</style>
+<!-- End of the modal -->
+    
+    <!-- This div ends for the background img -->
+  </div>
+
+
+<!-- Split up enrollment courses so each section has its own training -->
+
+
+    <!-- Enrollment Section -->
+    <div class="enrollSection">
+      <h1 class="start">Enroll Into Courses</h1>
+        <p style="text-align: center;">Hover over the excerise to get started</p>
+        <!-- Running Section -->
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <div class="container-sm">
+                <img src="/img/beginner running.jpg" alt="Train Beginner Legs">
+                <div class="overlay">
+                  <div class="text">
+                    <button class="coursebtn"> Beginner Legs </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-sm">
+              <div class="container-sm">
+                <img src="/img/beginner running.jpg" alt="Train Intermediate Legs">
+                <div class="overlay">
+                  <div class="text">
+                    <button class="coursebtn"> Intermediate Legs </button>
+                  </div>
+                </div>
+              </div>
+              </div>
+        
+            <div class="col-sm">
+              <div class="container-sm">
+                <img src="/img/beginner running.jpg" alt="Train Advanced Legs">
+                <div class="overlay">
+                  <div class="text">
+                    <button class="coursebtn"> Advanced Legs </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Arms -->
+            <div class="col-sm">
+              <div class="container-sm">
+                <img src="/img/beginner running.jpg" alt="Train Beginner Arms">
+                <div class="overlay">
+                  <div class="text">
+                    <button class="coursebtn animation"> Beginner Arms </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="container-sm">
+                <img src="/img/beginner running.jpg" alt="Train Intermediate Arms">
+                <div class="overlay">
+                  <div class="text">
+                    <button class="coursebtn animation"> Inntermediate </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="container-sm">
+                <img src="/img/beginner running.jpg" alt="Train Advanced Arms">
+                <div class="overlay">
+                  <div class="text">
+                    <button class="coursebtn animation"> Advanced Arms </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+ <!-- Enrollment Section -->
+    <div class="enrollSection">
+      <h1 class="start">Enroll Into Courses</h1>
+        <p style="text-align: center;">Hover over the excerise to get started</p>
+        <!-- Running Section -->
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <div class="container-sm">
+                <img src="/img/beginner running.jpg" alt="Train Beginner Legs">
+                <div class="overlay">
+                  <div class="text">
+                    <button class="coursebtn animation"> Beginner Legs </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-sm">
+              <div class="container-sm">
+                <img src="/img/beginner running.jpg" alt="Train Intermediate Legs">
+                <div class="overlay">
+                  <div class="text">
+                    <button class="coursebtn animation"> Intermediate Legs </button>
+                  </div>
+                </div>
+              </div>
+              </div>
+        
+            <div class="col-sm">
+              <div class="container-sm">
+                <img src="/img/beginner running.jpg" alt="Train Advanced Legs">
+                <div class="overlay">
+                  <div class="text">
+                    <button class="coursebtn animation"> Advanced Legs </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="container-sm">
+                <img src="/img/beginner running.jpg" alt="Train Beginner Arms">
+                <div class="overlay">
+                  <div class="text">
+                    <button class="coursebtn animation"> Beginner Arms </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="container-sm">
+                <img src="/img/beginner running.jpg" alt="Train Intermediate Arms">
+                <div class="overlay">
+                  <div class="text">
+                    <button class="coursebtn animation"> Inntermediate </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="container-sm">
+                <img src="/img/beginner running.jpg" alt="Train Advanced Arms">
+                <div class="overlay">
+                  <div class="text">
+                    <button class="coursebtn animation"> Advanced Arms </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- End of Enrollment Secttion -->
+
+ <!-- Enrollment Section -->
+ <div class="enrollSection">
+  <h1 class="start">Enroll Into Courses</h1>
+    <p style="text-align: center;">Hover over the excerise to get started</p>
+    <!-- Running Section -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="container-sm">
+            <img src="/img/beginner running.jpg" alt="Train Beginner Legs">
+            <div class="overlay">
+              <div class="text">
+                <button class="coursebtn"> Beginner Legs </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm">
+          <div class="container-sm">
+            <img src="/img/beginner running.jpg" alt="Train Intermediate Legs">
+            <div class="overlay">
+              <div class="text">
+                <button class="coursebtn"> Intermediate Legs </button>
+              </div>
+            </div>
+          </div>
+          </div>
+    
+        <div class="col-sm">
+          <div class="container-sm">
+            <img src="/img/beginner running.jpg" alt="Train Advanced Legs">
+            <div class="overlay">
+              <div class="text">
+                <button class="coursebtn"> Advanced Legs </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="container-sm">
+            <img src="/img/beginner running.jpg" alt="Train Beginner Arms">
+            <div class="overlay">
+              <div class="text">
+                <button class="coursebtn animation"> Beginner Arms </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="container-sm">
+            <img src="/img/beginner running.jpg" alt="Train Intermediate Arms">
+            <div class="overlay">
+              <div class="text">
+                <button class="coursebtn animation"> Inntermediate </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="container-sm">
+            <img src="/img/beginner running.jpg" alt="Train Advanced Arms">
+            <div class="overlay">
+              <div class="text">
+                <button class="coursebtn animation"> Advanced Arms </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- End of Enrollment Secttion -->
+
+
+    <!-- End of Enrollment Secttion -->
+
+
+
+    <!-- Footer -->
+    <div class="footer-container">
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <!-- General -->
+            <h1>Links</h1>
+            <a href="https://www.england.nhs.uk/news/" target="_new">More links</a>
+            <br>
+            <a href="https://www.england.nhs.uk/urgent-emergency-care/nhs-111/#:~:text=To%20get%20help%20from%20NHS,a%20landline%20or%20mobile%20phone." target="_new" >Seek Help Online</a>
+            <br>
+            <a href="https://www.nhs.uk" target="_new" >NHS</a>
+            <br>
+            <a href="/dist/privacy.html" target="_new" >Terms and Privacy</a>
+          </div>
+          <!-- End of General -->
+          <div class="col-sm">
+            <h1>Links</h1>
+            <a href="#">Create an Account</a>
+            <br>
+            <a href="https://www.health.com" target="_new" >Free Health Magazines</a>
+            <br>
+            <a href="https://societyforpsychotherapy.org/ask-ethicist-request-anonymous-consultation/" target="_new" >Anonymous Consultation</a>
+            <br>
+            <a href="https://abi.ai/en_GB" target="_new" >Online Chat</a>
+          </div>
+          <div class="col-sm">
+            <h1>Links</h1>
+            <a href="https://www.google.co.uk/maps" target="_new" >Search Areas Near You</a>
+            <br>
+            <a href="#" target="_new" >Gyms Near you</a>
+            <br>
+            <a href="#" target="_new" >Newsletter</a>
+            <br>
+            <a href="#" target="_new" >Register Email</a>
+          </div>
+        </div>
+      </div>
+
+    <div class="icon-container">
+      <a href="https://www.facebook.com/NHSwebsite" target="_new" class="fa fa-facebook"></a>
+      <a href="https://twitter.com/nhsengland" target="_new" class="fa fa-twitter"></a>
+      <a href="https://www.instagram.com/accounts/login/?next=/nhs/" target="_new" class="fa fa-instagram"></a>
+      <a href="https://accounts.google.com/servicelogin" target="_new" class="fa fa-google-plus"></a>
+      <p class="text-warning:"><b>Warning:</b> Clicking on these will take you to an external website (All are verified)</p>
+    </div>
+    </footer>
+  </div>
+    <!-- End of footer -->
+
+
+    <!-- Script for the login menu modal! -->
+    <script>
+      // Get the modal
+      var modal = document.getElementById('id01');
+      
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+      </script>
+
+<!-- Script runs for the Google Captcha -->
+<script>
+  function onSubmit(token) {
+    document.getElementById("demo-form").submit();
+  }
+</script>
+
+<!-- For the Google Captcha API -->
+<script src="https://www.google.com/recaptcha/api.js"></script>
+    
+
+</body>
+</html>

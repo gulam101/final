@@ -1,0 +1,450 @@
+// Imports
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+// Global
+$defaultBG: #222222;
+$defaultFont:'Roboto', sans-serif;
+$defaultFontColour: #fff;
+$hyperlinks: #2a9df4;
+
+
+// Global Buttons
+.right-side button,
+button,
+.sign-up,
+.coursebtn {
+	color: $defaultBG;
+	cursor: pointer;
+}
+
+/* Ttile & Sub title! */
+.container-title {
+	border: 1px solid #2a9df4;
+    margin-left: 30%;
+    margin-right: 30%;
+     position: static;
+}
+
+.container-title h1 {
+    font-size: 50px;
+}
+
+.container-title p {
+    font-size: 20px;
+}
+
+.container-title > .content {
+    text-align: center;
+}
+// End of title
+
+
+
+// 1. Login Button & Register button in top right corner (both share the same class)
+.signup,
+// I included this here since .signup shares the same button LOL!
+.coursebtn {
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	border: none;
+}
+
+// for the regsiter privacy link (for a)
+.privacy-link a {
+	color: red;
+}
+
+.container b {
+	cursor: auto;
+}
+
+.animation {
+  background-color: black;
+  color: #fff;
+  border: 1px solid $hyperlinks;
+
+}
+
+.animation:hover {
+  color: $hyperlinks;
+//   Used opacity to fix transparency issue (not sure what the problem is)
+  opacity: 1;
+  text-transform: uppercase;
+  border-radius: 50%;
+}
+
+.sign-up:visited {
+	border-radius: 50%;
+	border: 1px solid $hyperlinks;
+	text-transform: uppercase;
+  }
+
+.signup:active {
+	border-radius: 50%;
+	border: 1px solid $hyperlinks;
+	text-transform: uppercase;
+}
+
+
+// 2. Buttons used in login menu
+button {
+	border: none;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+  }
+
+// Main
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font: $defaultFont !important;
+	background-color: $defaultBG !important;
+	color: $defaultFontColour !important;
+}
+
+// Top menu bar
+/*Note: For the image, I used Pixabay! */
+.top-menu-bar {
+  background: linear-gradient(90deg, rgba(34, 34, 34, 1), rgba(0, 0, 0, 0.8) 50%), url("/img/fitness-g4aa231421_640.jpg");
+  color: white;
+  background-repeat: no-repeat;
+  background-attachment: initial;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.btn-container {
+	padding-right: 13px;
+	// Forces it on the right side
+	text-align: right;
+	padding-top: 9px;
+}
+
+.top-menu-bar img {
+	opacity: 0.3;
+}
+
+// Login Menu
+.warning-info {
+	text-align: center;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+// Added a seperate class to fix overlapping buttons
+.lgn,
+.register {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  }
+  
+button:hover {
+  opacity: 0.8;
+}
+  
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+  color: #fff;
+}
+  
+.container {
+  padding: 16px;
+}
+  
+.forgot-password a {
+  color: #2a9df4;
+}
+  
+span.forgot-password {
+  float: right;
+  padding-top: 16px;
+}
+  
+// Adds animation //
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+  
+  @-webkit-keyframes animatezoom {
+	from {
+	  -webkit-transform: scale(0);
+	}
+	to {
+	  -webkit-transform: scale(1);
+	}
+  }
+  
+  @keyframes animatezoom {
+	from {
+	  -webkit-transform: scale(0);
+			  transform: scale(0);
+	}
+	to {
+	  -webkit-transform: scale(1);
+			  transform: scale(1);
+	}
+  }
+// End of Login Menu
+
+// Navbar (for side menu)
+.navContainer {
+	border: 2px solid $hyperlinks;
+	height: 150px;
+	width: 10%;
+	position: absolute;
+	overflow: hidden;
+}
+
+// .nav {
+// 	sticky
+// }
+
+// Inherits the same class to avoid writing classes
+// that do the same functions
+.ul a, p {
+	text-align: center;
+}
+
+.nav ul,
+.top-menu-bar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul a {
+	color: $defaultFontColour;
+	font-size: 17px;
+}
+
+// Animates the underline for the menu
+.underline-animation,
+.col-sm a,
+.underline-anim {
+	position: relative;
+	color: #0087ca;
+  
+	&:after {
+	  content: '';
+	  position: absolute;
+	  width: 100%;
+	  transform: scaleX(0);
+	  height: 2px;
+	  bottom: 0;
+	  left: 0;
+	  background-color: #0087ca;
+	  transform-origin: bottom right;
+	  transition: transform 0.25s ease-out;
+	}
+  
+	&:hover:after {
+	  transform: scaleX(1);
+	  transform-origin: bottom left;
+	}
+  }
+
+
+// Don't want to overlap our colour pallet
+.navContainer a {
+	color: $hyperlinks;
+}
+
+// Underlines the active page we are on!
+.active
+,i {
+	color: $hyperlinks;
+	text-decoration: underline;
+	text-transform: uppercase;
+	cursor: context-menu;
+}
+
+.active:hover,
+i:hover {
+	color: $hyperlinks;
+}
+
+
+// Makes this navbar follow the user
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+  }
+  
+  .sticky + .content {
+	padding-top: 60px;
+  }
+
+// End of Navbar
+
+
+// Enrollment section 
+.enrollSection {
+	>h1, p {
+		text-align: center;
+	}
+}
+
+.enrollSection {
+	background-color: #121212;
+	margin-left: 15%;
+	margin-right: 15%;
+	// Gives a subtle rounded corner
+	border-radius: 3%;
+}
+
+// For the overlay over images
+.text {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+  }
+  
+  .overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+  }
+  
+  .container-sm:hover .overlay {
+	opacity: 1;
+  }
+//   End of overlay animation for img
+
+
+.enrollSection h1 {
+	color: $hyperlinks;
+	font-size: 50px;
+}
+
+// Targets container in enrollSection 
+.enrollSection .container {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+      /*  Targets the SM container in element */
+	  .container-sm img {
+		opacity: 1;
+		height: 250px;
+		cursor: pointer;
+	  }
+	  
+	  .container > .row {
+		border: 1px solid #2a9df4;
+		background-color: #222222;
+	  }
+	  
+	  .container-sm {
+		text-align: center;
+	  
+		img:hover {
+		  opacity: 0.8;
+	}
+  }
+
+// End of Enrollment Section
+
+// Footer
+.footer-container {
+	// Forces the container to make space between each other!
+	padding-top: 500px;
+}
+
+footer {
+	background-color: #121212;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	border-top: 0.1px solid $hyperlinks;
+	border-bottom: 0.1px solid $hyperlinks;
+}
+
+
+
+// Icon container (forces icons to centre)
+.icon-container {
+	text-align: center;
+}
+
+.icon-container b,
+.fa {
+	color: $hyperlinks;
+}
+
+// Default icons
+.fa {
+	padding: 10px;
+	font-size: 30px;
+	text-align: center;
+	text-decoration: none;
+}
+  
+.fa:hover {
+	opacity: 0.7;
+	text-decoration: none;
+	color: $hyperlinks;
+}
+  
+// Shares same attributes instead of writing the same class
+// with the same stuff over and over again  
+  .fa-facebook,
+  .fa-twitter,
+  .fa-instagram,
+  .fa-google-plus {
+	color: $defaultFontColour;
+  }
+// End of default icons
+
+.col-sm a,
+.create-account a {
+	color: $hyperlinks;
+}
+
+.col-sm h1 {
+	font-size: 30px;
+}
+
+
+// End of Footer
+
+// Privacy Section
+.privacyBackground {
+	background-color: #f8f8f8;
+}
