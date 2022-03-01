@@ -57,7 +57,6 @@ button,
   color: #2a9df4;
   opacity: 1;
   text-transform: uppercase;
-  border-radius: 50%;
 }
 
 .sign-up:visited {
@@ -99,11 +98,10 @@ body {
 
 /*Note: For the image, I used Pixabay! */
 .top-menu-bar {
-  background: -webkit-gradient(linear, left top, right top, from(#222222), color-stop(50%, rgba(0, 0, 0, 0.8))), url("/img/fitness-g4aa231421_640.jpg");
-  background: linear-gradient(90deg, #222222, rgba(0, 0, 0, 0.8) 50%), url("/img/fitness-g4aa231421_640.jpg");
+  background: -webkit-gradient(linear, left top, right top, from(#222222), color-stop(50%, rgba(0, 0, 0, 0.8))), url("/img/background.jpg");
+  background: linear-gradient(90deg, #222222, rgba(0, 0, 0, 0.8) 50%), url("/img/background.jpg");
   color: white;
   background-repeat: no-repeat;
-  background-attachment: initial;
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -332,11 +330,6 @@ i:hover {
   cursor: pointer;
 }
 
-.container > .row {
-  border: 1px solid #2a9df4;
-  background-color: #222222;
-}
-
 .row {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -373,6 +366,11 @@ footer {
   text-align: center;
   border-top: 0.1px solid #2a9df4;
   border-bottom: 0.1px solid #2a9df4;
+}
+
+.container .row {
+  border: 1px solid #2a9df4;
+  background-color: #222222;
 }
 
 .icon-container {

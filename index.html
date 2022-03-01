@@ -199,54 +199,6 @@ input[type=text], input[type=password] {
     <!-- This div ends for the background img -->
   </div>
 
-
-
-<style>
-  .search {
-  width: 100%;
-  position: relative;
-  display: flex;
-}
-
-.searchTerm {
-  width: 100%;
-  border: 3px solid #00B4CC;
-  border-right: none;
-  padding: 5px;
-  height: 20px;
-  border-radius: 5px 0 0 5px;
-  outline: none;
-  color: #9DBFAF;
-}
-
-.searchTerm:focus{
-  color: #00B4CC;
-}
-
-.searchButton {
-  width: 40px;
-  height: 36px;
-  border: 1px solid #00B4CC;
-  background: #00B4CC;
-  text-align: center;
-  color: #fff;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
-  font-size: 20px;
-}
-
-/*Resize the wrap to see the search bar change!*/
-.wrap{
-  width: 30%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-</style>
-
-
-
 <!-- Split up enrollment courses so each section has its own training -->
 
 
@@ -272,6 +224,58 @@ input[type=text], input[type=password] {
        <!-- https://stackoverflow.com/questions/12498604/create-a-search-box-to-find-text-on-page -->
 
 
+       <!-- Content to load up description for the legs section -->
+
+       <!-- Shares similar features from the previous modal! -->
+<div id="createAccont" class="modal">
+
+  <!-- Signup menu -->
+  <div class="modal-content">
+    <span onclick="document.getElementById('createAccont').style.display='none'" class="close" title="Close Menu">&times;</span>
+    <div class="container">
+      <h1 style="text-align: center;">Create Account</h1>
+      <label for="uname"><b>First Name:</b></label>
+      <input type="text" placeholder="Enter your First Name" name="uname" required>
+
+      <label for="psw"><b>Last Name:</b></label>
+      <input type="text" placeholder="Enter your Last Name" name="psw" required>
+
+      <label for="psw"><b>Email Address:</b></label>
+      <input type="text" placeholder="Somebody@gmail.com" name="psw" required>
+
+      <label for="psw"><b>Repeat Email Address:</b></label>
+      <input type="text" placeholder="Confirm Email Address" name="psw" required>
+
+      <!-- Checkbox for "Where did you find us?" -->
+      <label class="rememberBtn">
+        <p>Where did you hear about us?</p>
+        <input type="checkbox" name="remember"> YouTube
+        <br>
+        <input type="checkbox" name="remember"> Friend Recommendation
+        <br>
+        <input type="checkbox" name="remember"> Local Gym
+        <br>
+        <input type="checkbox" name="remember"> Events
+      </label>
+
+      <!-- Terms and privacy agreement box -->
+      <br>
+      <label class="rememberBtn">
+        <input required type="checkbox" name="remember"> I agree to the <a href="/dist/privacy.html" target="_new">terms & privacy</a>
+      </label>
+
+
+      <button type="submit" class="register" >Countinue</button>
+
+    </div>
+  </div>
+
+</div>
+
+
+<!-- End -->
+
+
         <!-- Legs Section Section -->
         <div class="container">
           <div class="row">
@@ -285,9 +289,6 @@ input[type=text], input[type=password] {
                 </div>
               </div>
             </div>
-
-           
-            
             <div class="col-sm">
               <div class="container-sm">
                 <img src="/img/beginner running.jpg" alt="Train Intermediate Legs">
@@ -298,7 +299,6 @@ input[type=text], input[type=password] {
                 </div>
               </div>
               </div>
-        
             <div class="col-sm">
               <div class="container-sm">
                 <img src="/img/beginner running.jpg" alt="Train Advanced Legs">
@@ -309,7 +309,6 @@ input[type=text], input[type=password] {
                 </div>
               </div>
             </div>
-         
             <div class="col-sm">
               <div class="container-sm">
                 <img src="/img/custom (1).jpg" alt="Custom Legs Training (build your own)">
@@ -393,52 +392,52 @@ input[type=text], input[type=password] {
 
     <!-- Footer -->
     <div class="footer-container">
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm">
-            <!-- General -->
-            <h1>Links</h1>
-            <a href="https://www.england.nhs.uk/news/" target="_new">More links</a>
-            <br>
-            <a href="https://www.england.nhs.uk/urgent-emergency-care/nhs-111/#:~:text=To%20get%20help%20from%20NHS,a%20landline%20or%20mobile%20phone." target="_new" >Seek Help Online</a>
-            <br>
-            <a href="https://www.nhs.uk" target="_new" >NHS</a>
-            <br>
-            <a href="/dist/privacy.html" target="_new" >Terms and Privacy</a>
-          </div>
-          <!-- End of General -->
-          <div class="col-sm">
-            <h1>Links</h1>
-            <a href="#">Create an Account</a>
-            <br>
-            <a href="https://www.health.com" target="_new" >Free Health Magazines</a>
-            <br>
-            <a href="https://societyforpsychotherapy.org/ask-ethicist-request-anonymous-consultation/" target="_new" >Anonymous Consultation</a>
-            <br>
-            <a href="https://abi.ai/en_GB" target="_new" >Online Chat</a>
-          </div>
-          <div class="col-sm">
-            <h1>Links</h1>
-            <a href="https://www.google.co.uk/maps" target="_new" >Search Areas Near You</a>
-            <br>
-            <a href="#" target="_new" >Gyms Near you</a>
-            <br>
-            <a href="#" target="_new" >Newsletter</a>
-            <br>
-            <a href="#" target="_new" >Register Email</a>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <!-- General -->
+              <h1>Links</h1>
+              <a href="https://www.england.nhs.uk/news/" target="_new">More links</a>
+              <br>
+              <a href="https://www.england.nhs.uk/urgent-emergency-care/nhs-111/#:~:text=To%20get%20help%20from%20NHS,a%20landline%20or%20mobile%20phone." target="_new" >Seek Help Online</a>
+              <br>
+              <a href="https://www.nhs.uk" target="_new" >NHS</a>
+              <br>
+              <a href="/dist/privacy.html" target="_new" >Terms and Privacy</a>
+            </div>
+            <!-- End of General -->
+            <div class="col-sm">
+              <h1>Links</h1>
+              <a href="#">Create an Account</a>
+              <br>
+              <a href="https://www.health.com" target="_new" >Free Health Magazines</a>
+              <br>
+              <a href="https://societyforpsychotherapy.org/ask-ethicist-request-anonymous-consultation/" target="_new" >Anonymous Consultation</a>
+              <br>
+              <a href="https://abi.ai/en_GB" target="_new" >Online Chat</a>
+            </div>
+            <div class="col-sm">
+              <h1>Links</h1>
+              <a href="https://www.google.co.uk/maps" target="_new" >Search Areas Near You</a>
+              <br>
+              <a href="#" target="_new" >Gyms Near you</a>
+              <br>
+              <a href="#" target="_new" >Newsletter</a>
+              <br>
+              <a href="#" target="_new" >Register Email</a>
+            </div>
           </div>
         </div>
-      </div>
 
-    <div class="icon-container">
-      <a href="https://www.facebook.com/NHSwebsite" target="_new" class="fa fa-facebook"></a>
-      <a href="https://twitter.com/nhsengland" target="_new" class="fa fa-twitter"></a>
-      <a href="https://www.instagram.com/accounts/login/?next=/nhs/" target="_new" class="fa fa-instagram"></a>
-      <a href="https://accounts.google.com/servicelogin" target="_new" class="fa fa-google-plus"></a>
-      <p class="text-warning:"><b>Warning:</b> Clicking on these will take you to an external website (All are verified)</p>
-    </div>
-    </footer>
+      <div class="icon-container">
+        <a href="https://www.facebook.com/NHSwebsite" target="_new" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/nhsengland" target="_new" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/accounts/login/?next=/nhs/" target="_new" class="fa fa-instagram"></a>
+        <a href="https://accounts.google.com/servicelogin" target="_new" class="fa fa-google-plus"></a>
+        <p class="text-warning:"><b>Warning:</b> Clicking on these will take you to an external website (All are verified)</p>
+      </div>
+      </footer>
   </div>
     <!-- End of footer -->
 

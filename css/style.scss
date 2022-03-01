@@ -64,7 +64,6 @@ button,
   background-color: black;
   color: #fff;
   border: 1px solid $hyperlinks;
-
 }
 
 .animation:hover {
@@ -72,7 +71,6 @@ button,
 //   Used opacity to fix transparency issue (not sure what the problem is)
   opacity: 1;
   text-transform: uppercase;
-  border-radius: 50%;
 }
 
 .sign-up:visited {
@@ -116,10 +114,9 @@ body {
 // Top menu bar
 /*Note: For the image, I used Pixabay! */
 .top-menu-bar {
-  background: linear-gradient(90deg, rgba(34, 34, 34, 1), rgba(0, 0, 0, 0.8) 50%), url("/img/fitness-g4aa231421_640.jpg");
+  background: linear-gradient(90deg, rgba(34, 34, 34, 1), rgba(0, 0, 0, 0.8) 50%), url("/img/background.jpg");
   color: white;
   background-repeat: no-repeat;
-  background-attachment: initial;
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -364,11 +361,6 @@ i:hover {
 		height: 250px;
 		cursor: pointer;
 	  }
-	  
-	  .container > .row {
-		border: 1px solid #2a9df4;
-		background-color: #222222;
-	  }
 
 	  .row {
 		  padding-top: 15px;
@@ -413,6 +405,11 @@ footer {
 	text-align: center;
 	border-top: 0.1px solid $hyperlinks;
 	border-bottom: 0.1px solid $hyperlinks;
+}
+
+.container .row {
+	border: 1px solid $hyperlinks;
+	background-color: #222222;
 }
 
 
