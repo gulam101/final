@@ -311,6 +311,11 @@ i:hover {
 	margin-right: 15%;
 }
 
+.spacer {
+	padding-top: 50px;
+	padding-bottom: 50px;
+  }
+
 // For the overlay over images
 .text {
 	color: white;
@@ -364,6 +369,11 @@ i:hover {
 		border: 1px solid #2a9df4;
 		background-color: #222222;
 	  }
+
+	  .row {
+		  padding-top: 15px;
+		  padding-bottom: 15px;
+	  }
 	  
 	  .container-sm {
 		text-align: center;
@@ -386,7 +396,7 @@ i:hover {
   .toolbar {
 	text-align: center;
 	color: $hyperlinks;
-	border-radius: 1px solid $hyperlinks;
+	border: 1px solid $hyperlinks;
   }
 
 
@@ -457,3 +467,18 @@ footer {
 .privacyBackground {
 	background-color: #f8f8f8;
 }
+
+
+
+
+// Test
+
+.toolbar .fa {
+	color: $hyperlinks; 
+	text-transform: uppercase;
+	cursor: context-menu;
+}
+
+  .toolbar .fa:hover {
+	color: $hyperlinks; 
+  }

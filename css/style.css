@@ -282,6 +282,11 @@ i:hover {
   margin-right: 15%;
 }
 
+.spacer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .text {
   color: white;
   font-size: 20px;
@@ -332,6 +337,11 @@ i:hover {
   background-color: #222222;
 }
 
+.row {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 .container-sm {
   text-align: center;
 }
@@ -349,7 +359,7 @@ i:hover {
 .toolbar {
   text-align: center;
   color: #2a9df4;
-  border-radius: 1px solid #2a9df4;
+  border: 1px solid #2a9df4;
 }
 
 .footer-container {
@@ -405,5 +415,15 @@ footer {
 
 .privacyBackground {
   background-color: #f8f8f8;
+}
+
+.toolbar .fa {
+  color: #2a9df4;
+  text-transform: uppercase;
+  cursor: context-menu;
+}
+
+.toolbar .fa:hover {
+  color: #2a9df4;
 }
 /*# sourceMappingURL=style.css.map */
