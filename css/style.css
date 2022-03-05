@@ -1,4 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font: "Roboto", sans-serif !important;
+  background-color: #222222 !important;
+  color: #fff !important;
+}
+
+.bodycontainer {
+  background-color: ghostwhite;
+  color: black;
+}
+
 .right-side button,
 button,
 .sign-up,
@@ -47,6 +65,12 @@ button,
   cursor: auto;
 }
 
+.container .start,
+h1,
+p {
+  text-align: center;
+}
+
 .animation {
   background-color: black;
   color: #fff;
@@ -83,19 +107,6 @@ button {
           transition-duration: 0.4s;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  font: "Roboto", sans-serif !important;
-  background-color: #222222 !important;
-  color: #fff !important;
-}
-
 /*Note: For the image, I used Pixabay! */
 .top-menu-bar {
   background: -webkit-gradient(linear, left top, right top, from(#222222), color-stop(50%, rgba(0, 0, 0, 0.8))), url("/img/background.jpg");
@@ -124,7 +135,8 @@ body {
 }
 
 .lgn,
-.register {
+.register,
+.enroll {
   background-color: #04AA6D;
   color: white;
   padding: 14px 20px;
@@ -184,8 +196,9 @@ span.forgot-password {
 }
 
 .navContainer {
-  border: 2px solid #2a9df4;
-  height: 150px;
+  border: 1px solid #2a9df4;
+  border-top: none;
+  height: 190px;
   width: 10%;
   position: absolute;
   overflow: hidden;

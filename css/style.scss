@@ -7,6 +7,24 @@ $defaultFont:'Roboto', sans-serif;
 $defaultFontColour: #fff;
 $hyperlinks: #2a9df4;
 
+// Main
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font: $defaultFont !important;
+	background-color: $defaultBG !important;
+	color: $defaultFontColour !important;
+}
+
+.bodycontainer {
+	background-color: ghostwhite;
+	color: black;
+}
+
 
 // Global Buttons
 .right-side button,
@@ -60,6 +78,12 @@ button,
 	cursor: auto;
 }
 
+.container .start,
+h1,
+p {
+	text-align: center;
+}
+
 .animation {
   background-color: black;
   color: #fff;
@@ -98,18 +122,7 @@ button {
 	transition-duration: 0.4s;
   }
 
-// Main
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
 
-body {
-    font: $defaultFont !important;
-	background-color: $defaultBG !important;
-	color: $defaultFontColour !important;
-}
 
 // Top menu bar
 /*Note: For the image, I used Pixabay! */
@@ -142,7 +155,8 @@ body {
 
 // Added a seperate class to fix overlapping buttons
 .lgn,
-.register {
+.register,
+.enroll {
   background-color: #04AA6D;
   color: white;
   padding: 14px 20px;
@@ -205,8 +219,9 @@ span.forgot-password {
 
 // Navbar (for side menu)
 .navContainer {
-	border: 2px solid $hyperlinks;
-	height: 150px;
+	border: 1px solid $hyperlinks;
+	border-top: none;
+	height: 190px;
 	width: 10%;
 	position: absolute;
 	overflow: hidden;
