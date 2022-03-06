@@ -49,6 +49,10 @@ button,
     font-size: 20px;
 }
 
+.content {
+	padding-top: 85px;
+}
+
 .container-title > .content {
     text-align: center;
 }
@@ -56,7 +60,6 @@ button,
 
 // 1. Login Button & Register button in top right corner (both share the same class)
 .signup,
-// I included this here since .signup shares the same button LOL!
 .coursebtn {
 	padding: 16px 32px;
 	text-align: center;
@@ -67,6 +70,7 @@ button,
 	transition-duration: 0.4s;
 	cursor: pointer;
 	border: none;
+
 }
 
 // for the regsiter privacy link (for a)
@@ -120,6 +124,7 @@ button {
 	font-size: 16px;
 	margin: 4px 2px;
 	transition-duration: 0.4s;
+
   }
 
 
@@ -132,14 +137,29 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 300px;
+  height: 500px;
+}
+
+.btn-container .left p {
+	text-align: left;
+}
+
+.btn-container .left {
+	padding-bottom: 3px;
+	position: absolute;
 }
 
 .btn-container {
 	padding-right: 13px;
 	// Forces it on the right side
 	text-align: right;
-	padding-top: 9px;
+	padding-top: 3px;
+
+}
+
+.account-container-btn {
+	text-align: center;
+	padding-top: 10px;
 }
 
 .top-menu-bar img {
@@ -219,17 +239,12 @@ span.forgot-password {
 
 // Navbar (for side menu)
 .navContainer {
-	border: 1px solid $hyperlinks;
-	border-top: none;
-	height: 190px;
 	width: 10%;
 	position: absolute;
 	overflow: hidden;
+	text-align: center;
+	border: 1px solid $hyperlinks;
 }
-
-// .nav {
-// 	sticky
-// }
 
 // Inherits the same class to avoid writing classes
 // that do the same functions
@@ -248,6 +263,8 @@ ul a {
 	color: $defaultFontColour;
 	font-size: 17px;
 }
+
+
 
 // Animates the underline for the menu
 .underline-animation,
@@ -439,10 +456,15 @@ footer {
 	color: $hyperlinks;
 }
 
+.fa-regular {
+	text-decoration: none;
+	color: #fff;
+}
+
 // Default icons
 .fa {
 	padding: 10px;
-	font-size: 30px;
+	font-size: 20px;
 	text-align: center;
 	text-decoration: none;
 }
@@ -475,12 +497,10 @@ footer {
 
 // End of Footer
 
-// Privacy Section
+// Privacy Page
 .privacyBackground {
 	background-color: #f8f8f8;
 }
-
-
 
 
 // Test
@@ -494,3 +514,9 @@ footer {
   .toolbar .fa:hover {
 	color: $hyperlinks; 
   }
+
+//   End of Privacy Page
+
+// Settings Page
+
+// End of Settings Page

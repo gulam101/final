@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/67f4f70c85.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Account Settings</title>
+</head>
+<body>
+<!-- Notes -->
+<!-- 1. Update Menu Settings
+2. Update button information
+3. Provide more account information settings
+4. Add placeholders for account information
+5. Make phone number hold only numbers
+6. Logout button needs to be red! -->
+
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3">
+                    <h2>Account Menu</h2>
+                    <hr>
+                        <ul>
+                            <li><a class="active" href="#"><i class="fa-regular fa-house-chimney"></i> Home</a></li>
+                            <li><a class="underline-anim" href="#"><i class="fa-regular fa-user"></i> My Account</a></li>
+                            <li><a class="underline-anim" href="#"><i class="fa-regular fa-plus"></i> More courses</a></li>
+                            <li><a class="underline-anim" href="#"><i class="fa-regular fa-calendar"></i> Events</a></li>
+                            <li><a class="underline-anim" href="#"><i class="fa-regular fa-newspaper"></i> Articles</a></li>
+                            <li><a class="underline-anim" href="#"><i class="fa-regular fa-circle-question"></i> Help</a></li>
+                        </ul>
+                <button>Log Out</button>    
+            </div>
+            <div class="container">
+                <div class="start">
+                <h1>Account Settings</h1>
+                <p>If you want to update any account information, you can change the current
+                    information, and then click the "Update" button below which will then suspended
+                    a confirmation email which will ask if you wanted to update your information or
+                    not.
+                      <p>
+                </div>
+                <div class="row">
+                  <div class="col-sm">
+                    <div class="container-sm">
+                        <form class="account-settings">
+                            <label for="fname">First Name: </label>
+                            <br>
+                            <input type="text" id="fname" name="fname">
+                            <br>
+                   
+                            <label for="fname">Current Phone: </label>
+                            <br>
+                            <input type="text" id="fname" name="fname">
+                            <br>
+
+                            
+                          </form>
+                    </div>
+
+         
+
+                    <style>
+                        .account-settings {
+                            text-align: left;
+                        }
+
+                        .account-settings input {
+                            width: 100%;
+                        }
+
+
+                        .col-lg-3 {
+                            border: 1px solid #fff;
+
+                            color: #fff;
+                        }
+
+                        .container-fluid {
+                            margin: 0;
+                        }
+
+
+
+                        .col-lg-3 .ul > li {
+                            color: #fff;
+                        }
+                    </style>
+                  </div>
+                <div class="col-sm">
+                    <div class="container-sm">
+                        <form class="account-settings">
+                            <label for="fname">Last Name: </label>
+                            <br>
+                            <input type="text" id="fname" name="fname">
+                            <br>
+
+                            <label for="fname">Current Email Address: </label>
+                            <br>
+                            <input type="text" id="fname" name="fname">
+                            <br>
+                        </form>
+                    </div>
+                </div>
+                </div>
+                <div class="social-media">
+                    <h2>Link my Social Media Accounts</h2>
+                    <div class="icon-container">
+                        <a href="https://www.facebook.com/NHSwebsite" target="_new" class="fa fa-facebook"></a>
+                        <a href="https://twitter.com/nhsengland" target="_new" class="fa fa-twitter"></a>
+                        <a href="https://www.instagram.com/accounts/login/?next=/nhs/" target="_new" class="fa fa-instagram"></a>
+                        <a href="https://accounts.google.com/servicelogin" target="_new" class="fa fa-google-plus"></a>
+                        <p class="text-warning:"><b>Warning:</b> Clicking on these will take you to an external website (All are verified)</p>
+                      </div>
+                </div>
+               
+                <div class="extra">
+                    <div class="row">
+                        <div class="account-container-btn">
+                            <p><b>Warning: This does not delete your account, if you wish to delete your
+                                account please follow the instructions in the email, this will allow you to delete your account!
+                            </b> </p>
+                            <button onclick="document.getElementById('id01').style.display='block' "class="warning" style="width:auto;">Deactivate Account</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+
+            <style>
+                .social-media {
+                    border: 1px solid #2a9df4;
+
+                }
+
+                .social-media h2 {
+                    text-align: center;
+                }
+
+                .extra {
+                    border: 1px solid #2a9df4;
+                    border-top: none;
+                    text-align: center;
+                }
+
+                /* Fixes the button not aligning correctly */
+                .account-container-btn {
+                    text-align: center;
+                    width: 100%;
+                }
+
+                .extra p {
+                    text-align: center;
+                    padding-left: 6px;
+                    padding-right: 6px;
+                }
+
+                .warning {
+                    background-color: rgba(0, 0, 0, 0.4);
+                    color: red;
+                }
+            </style>
+
+
+
+</body>
+</html>

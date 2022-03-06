@@ -39,6 +39,10 @@ button,
   font-size: 20px;
 }
 
+.content {
+  padding-top: 85px;
+}
+
 .container-title > .content {
   text-align: center;
 }
@@ -115,13 +119,27 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 300px;
+  height: 500px;
+}
+
+.btn-container .left p {
+  text-align: left;
+}
+
+.btn-container .left {
+  padding-bottom: 3px;
+  position: absolute;
 }
 
 .btn-container {
   padding-right: 13px;
   text-align: right;
-  padding-top: 9px;
+  padding-top: 3px;
+}
+
+.account-container-btn {
+  text-align: center;
+  padding-top: 10px;
 }
 
 .top-menu-bar img {
@@ -196,12 +214,11 @@ span.forgot-password {
 }
 
 .navContainer {
-  border: 1px solid #2a9df4;
-  border-top: none;
-  height: 190px;
   width: 10%;
   position: absolute;
   overflow: hidden;
+  text-align: center;
+  border: 1px solid #2a9df4;
 }
 
 .ul a, p {
@@ -395,9 +412,14 @@ footer {
   color: #2a9df4;
 }
 
+.fa-regular {
+  text-decoration: none;
+  color: #fff;
+}
+
 .fa {
   padding: 10px;
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
   text-decoration: none;
 }
