@@ -10,34 +10,40 @@
     <title>Healthy excerise online</title>
 </head>
 <body>
-
-      <!-- Navbar -->
-          <!-- Start of side NavBar -->
-          <div class="nav">
-            <div style="background-color:rgba(0, 0, 0, 0.5);">
-              <div class="navContainer">
-                <ul>
-                  <li><a class="active" href="#"><i class="fa-regular fa-house-chimney"></i> Home</a></li>
-                  <li><a class="underline-anim" href="#"><i class="fa-regular fa-user"></i> My Account</a></li>
-                  <li><a class="underline-anim" href="#"><i class="fa-regular fa-plus"></i> More courses</a></li>
-                  <li><a class="underline-anim" href="#"><i class="fa-regular fa-calendar"></i> Events</a></li>
-                  <li><a class="underline-anim" href="#"><i class="fa-regular fa-newspaper"></i> Articles</a></li>
-                  <li><a class="underline-anim" href="#"><i class="fa-regular fa-circle-question"></i> Help</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-            <!-- End of Side NavBar -->
-
-
-
-
   <!-- Top menu bar -->
   <div class="top-menu-bar">
     <div class="btn-container">
-      <button onclick="document.getElementById('id01').style.display='block' "class="sign-up animation" style="width:auto;">Login</button>
+      <button onclick="document.getElementById('loginAccount').style.display='block' "class="sign-up animation" style="width:auto;">Login</button>
       <button onclick="document.getElementById('createAccont').style.display='block' "class="sign-up animation" style="width:auto;">Register</button>
     </div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a class="active" href="#"><i class="fa-regular fa-house-chimney"></i> Home </a>
+      <a class="underline-anim" href="#"><i class="fa-regular fa-user"></i> My Account </a>
+      <a class="underline-anim" href="#"><i class="fa-regular fa-plus"></i> More courses </a>
+      <a class="underline-anim" href="#"><i class="fa-regular fa-calendar"></i> Events </a>
+      <a class="underline-anim" href="#"><i class="fa-regular fa-newspaper"></i> Articles </a>
+      <a class="underline-anim" href="#"><i class="fa-regular fa-circle-question"></i> Help </a>
+    </div>
+    
+    <div id="main">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+    
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+      document.body.style.backgroundColor = "white";
+    }
+    </script>
+       
     <div class="container-title">
       <div class="content">
         <h1>Inspire to be yourself</h1>
@@ -45,6 +51,11 @@
         <p></p>
       </div>
     </div>
+
+
+    
+
+  
 
 
 
@@ -150,11 +161,11 @@
 
 <!-- Login menu -->
 
-<div id="id01" class="modal">
+<div id="loginAccount" class="modal">
   
   <form class="modal-content animate" action="/action_page.php" method="post">
     <div class="warning-info">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Menu">&times;</span>
+      <span onclick="document.getElementById('loginAccount').style.display='none'" class="close" title="Close Menu">&times;</span>
      <h1>Login</h1>
       <br>
       <p>Please note, sharing passwords is stricly forbidden on the website
@@ -182,7 +193,7 @@
     </div>
 
     <div class="container">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <button type="button" onclick="document.getElementById('loginAccount').style.display='none'" class="cancelbtn">Cancel</button>
       <span class="forgot-password">Click here if you <a href="#fgtpass">Forgot Password</a></span>
     </div>
   </form>

@@ -238,32 +238,49 @@ span.forgot-password {
 // End of Login Menu
 
 // Navbar (for side menu)
-.navContainer {
-	width: 10%;
-	position: absolute;
-	overflow: hidden;
-	text-align: center;
-	border: 1px solid $hyperlinks;
-}
-
-// Inherits the same class to avoid writing classes
-// that do the same functions
-.ul a, p {
-	text-align: center;
-}
-
-.nav ul,
-.top-menu-bar ul {
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+  
+	a {
+	  padding: 8px 8px 8px 32px;
+	  text-decoration: none;
+	  font-size: 25px;
+	  color: #818181;
+	  display: block;
+	  transition: 0.3s;
+	  list-style-type: none;
+  
+	  &:hover {
+		color: #f1f1f1;
+	  }
+	}
+  
+	.closebtn {
+	  position: absolute;
+	  top: 0;
+	  right: 25px;
+	  font-size: 36px;
+	  margin-left: 50px;
+	}
+  }
+  
+  li a {
 	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-ul a {
-	color: $defaultFontColour;
-	font-size: 17px;
-}
-
+  }
+  
+  #main {
+	transition: margin-left .5s;
+	padding: 16px;
+  }
 
 
 // Animates the underline for the menu
@@ -437,6 +454,7 @@ footer {
 	text-align: center;
 	border-top: 0.1px solid $hyperlinks;
 	border-bottom: 0.1px solid $hyperlinks;
+	margin: 0;
 }
 
 .container .row {

@@ -213,28 +213,51 @@ span.forgot-password {
   }
 }
 
-.navContainer {
-  width: 10%;
-  position: absolute;
-  overflow: hidden;
-  text-align: center;
-  border: 1px solid #2a9df4;
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 60px;
 }
 
-.ul a, p {
-  text-align: center;
-}
-
-.nav ul,
-.top-menu-bar ul {
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
-ul a {
-  color: #fff;
-  font-size: 17px;
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+li a {
+  list-style-type: none;
+}
+
+#main {
+  -webkit-transition: margin-left .5s;
+  transition: margin-left .5s;
+  padding: 16px;
 }
 
 .underline-animation,
@@ -396,6 +419,7 @@ footer {
   text-align: center;
   border-top: 0.1px solid #2a9df4;
   border-bottom: 0.1px solid #2a9df4;
+  margin: 0;
 }
 
 .container .row {
