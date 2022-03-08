@@ -8,35 +8,25 @@
     <script src="https://kit.fontawesome.com/67f4f70c85.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="shortcut icon" href="/img/favicon.ico">
-    <title>Healthy excerise online</title>
+    <title>Courses Section: Enroll now!</title>
 </head>
 <body>
   <!-- Top menu bar -->
-  <div class="top-menu-bar">
     <div class="btn-container">
       <button onclick="document.getElementById('loginAccount').style.display='block' "class="sign-up animation" style="width:auto;">Login</button>
       <button onclick="document.getElementById('createAccont').style.display='block' "class="sign-up animation" style="width:auto;">Register</button>
     </div>
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a class="active" href="#"><i class="fa-regular fa-house-chimney"></i> Home </a>
+      <a class="underline-anim" href="#"><i class="fa-regular fa-house-chimney"></i> Home </a>
       <a class="underline-anim" href="/dist/settings.html"><i class="fa-regular fa-user"></i> My Account </a>
-      <a class="underline-anim" href="/dist/courses.html"><i class="fa-regular fa-plus"></i> Courses </a>
+      <a class="active" href="#"><i class="fa-regular fa-plus"></i> More courses </a>
       <a class="underline-anim" href="#"><i class="fa-regular fa-calendar"></i> Events </a>
       <a class="underline-anim" href="#"><i class="fa-regular fa-newspaper"></i> Articles </a>
       <a class="underline-anim" href="#"><i class="fa-regular fa-circle-question"></i> Help </a>
     </div>
     <div id="main">
       <span style="font-size:30px;cursor:pointer" onclick="openNav(this)">&#9776;</span>
-    </div>
-    <div class="container-title">
-      <div class="content">
-        <h1>Inspire to be yourself</h1>
-          <p>Control who you are!</p>
-          <a href="">
-            <button>View our Courses</button>
-          </a>
-      </div>
     </div>
 
 
@@ -106,6 +96,8 @@
     </div>
   </form>
 </div>
+
+<h1>Enroll Into the Courses</h1>
 
 
 <!-- This style is needed for the modal -->
@@ -219,103 +211,25 @@
       <button type="submit" class="register" >Countinue</button>
     </div>
   </div>
-
 </div>
-
-
 <!-- End -->
-
-
-
  <!-- Modal for legs -->
-
-
  <!-- Beginner -->
-
  <div id="beginnerLegsOne" class="modal">
-
   <div class="modal-content">
     <span onclick="document.getElementById('beginnerLegsOne').style.display='none'" class="close" title="Close Menu">&times;</span>
     <div class="container">
       <p>Enroll into this beginner course to start training your legs, pro tip: make sure to
         start at a level your comfortable with and then make your way to the advanced class.
       </p>
-     
-
       <button type="submit" class="lgn" >Enroll</button>
-
     </div>
   </div>
-
 </div>
-
-
-<!-- <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<style>
-  .homepage-img {
-    height: 500px;
-    width: 600px;
-  }
-
-</style>
-
-
-<div class="container">
-  <div class="row">
-    <div class="col-m">
-      <img src="/img/homepage01.jpg" class="homepage-img" alt="Advertisement" srcset="">
-    </div>
-    <div class="col-sm-4">
-      <img src="/img/homepage02.jpg" class="homepage-img" alt="Advertisement" srcset="">
-    </div>
-    <div class="col-sm-4">
-      <img src="/img/homepage03.jpg" class="homepage-img" alt="Advertisement" srcset="">
-    </div>
-  </div>
-</div> -->
-
-
-
-
         <!-- Legs Section Section -->
         <div class="container">
           <div class="start">
-          <h1>Enroll Into Courses</h1>
+         
             <p>Hover over the excerise to get started</p>
           </div>
           <div class="row">
@@ -419,12 +333,13 @@
 
         <div class="coursebar-container">   
           <div class="toolbar">
-            <a href="#"> <i class="fa fa-angle-double-left"></i> </a>
+            <a href="#"> <i class="fa fa-angle-double-left" id="arrows"></i> </a>
             <a href="#" class="active">1</a>
              <a href="#">2</a>
              <a href="#">3</a>
              <a href="#">4</a>
              <a href="#">...</a>
+             <a href="#"> <i class="fa fa-angle-double-right" id="arrows" ></i> </a>
           </div>
         </div>
 
@@ -573,8 +488,5 @@ onAuthStateChanged(auth, (user) => {
     // ...
   }
 });
-
-
-
 </script>
 </html>

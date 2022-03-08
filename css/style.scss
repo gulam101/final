@@ -343,15 +343,10 @@ span.forgot-password {
 }
 
 // Underlines the active page we are on!
-.active
-,i {
-	text-decoration: underline;
+.active {
 	text-transform: uppercase;
 }
 
-.active {
-	color: red;
-}
 
 .active:hover {
 	color: $hyperlinks;
@@ -603,3 +598,11 @@ color: red;
 }
 
 // End of Settings Page
+
+// Courses section
+#arrows {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+// indexsignedout

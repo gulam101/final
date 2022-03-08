@@ -326,14 +326,8 @@ span.forgot-password {
   color: #2a9df4;
 }
 
-.active
-, i {
-  text-decoration: underline;
-  text-transform: uppercase;
-}
-
 .active {
-  color: red;
+  text-transform: uppercase;
 }
 
 .active:hover {
@@ -549,5 +543,10 @@ footer {
 .warning {
   background-color: rgba(0, 0, 0, 0.4);
   color: red;
+}
+
+#arrows {
+  text-decoration: none;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
