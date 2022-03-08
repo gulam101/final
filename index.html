@@ -75,7 +75,7 @@
 
 <!-- User Login menu -->
 <div id="loginAccount" class="modal"> 
-  <form class="modal-content animate" action="/action_page.php" method="post">
+  <form class="modal-content animate">
     <div class="warning-info">
       <span onclick="document.getElementById('loginAccount').style.display='none'" class="close" title="Close Menu">&times;</span>
      <h1>Login</h1>
@@ -561,7 +561,6 @@ login.addEventListener('click',(e)=>{
         last_login: dt,
       })
       alert('user logged in')
-    // ...
   })
   .catch((error) => {
     const errorCode = error.code;
