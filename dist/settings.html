@@ -41,14 +41,16 @@
                         <h2>Account Menu</h2>
                         <hr>
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                        <a class="active" href="#"><i class="fa-regular fa-house-chimney"></i> Home </a>
-                        <a class="underline-anim" href="#"><i class="fa-regular fa-user"></i> My Account </a>
+                        <a class="underline-anim" href="#"><i class="fa-regular fa-house-chimney"></i> Home </a>
+                        <a class="active" href="#"><i class="fa-regular fa-user"></i> My Account </a>
                         <a class="underline-anim" href="#"><i class="fa-regular fa-plus"></i> More courses </a>
                         <a class="underline-anim" href="#"><i class="fa-regular fa-calendar"></i> Events </a>
                         <a class="underline-anim" href="#"><i class="fa-regular fa-newspaper"></i> Articles </a>
                         <a class="underline-anim" href="#"><i class="fa-regular fa-circle-question"></i> Help </a>
                         <div class="logout-btn-container">
-                          <button onclick="document.getElementById('id04').style.display='block' "class="sign-out" style="width:auto;">Log Out</button>   
+                          <a href="/index.html">
+                            <button onclick="document.getElementById('').style.display='block' "class="sign-out" style="width:auto;">Log Out</button>   
+                          </a>
                         </div>    
                       </div>
                       <div id="main">
@@ -59,8 +61,6 @@
             </div>
       </div>
   </div>
-
-
   
   <div class="container">
     <div class="start">
@@ -75,7 +75,7 @@
         <div class="container-sm">
             <form class="account-settings">
                 <label for="text">First Name:</label>
-                <input type="text" placeholder="" id="userfirstname" name="fname">
+                <input type="text" id="userfirstname" name="fname">
                 <label for="fphone">Current Phone: </label>
                 <input type="number" placeholder="Update Phone Number" id="fname" name="fname">
                 <label for="fname">Update Password </label>
@@ -219,12 +219,80 @@ cursor: pointer;
         </div>
         </footer>
     </div>
+
+<!-- These two are inactive -->
+<!-- Shares similar features from the previous modal! -->
+<div id="createAccont" class="modal">
+  <!-- Create Account menu -->
+  <div class="modal-content">
+    <span onclick="document.getElementById('createAccont').style.display='none'" class="close" title="Close Menu">&times;</span>
+    <div class="container">
+      <h1 style="text-align: center;">Create Account</h1>
+      <label for="uname"><b>First Name:</b></label>
+      <input type="text" id="firstname" placeholder="Enter your First Name" name="uname" required>
+      <label for="psw"><b>Last Name:</b></label>
+      <input type="text" id="lastname" placeholder="Enter your Last Name" name="uname" required>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" id="password" placeholder="Password" name="psw" required>
+      <label for="psw"><b>Email Address:</b></label>
+      <input type="text" id="useremail" placeholder="Email Address" name="email" required>
+      <!-- Terms and privacy agreement box -->
+      <br>
+      <label class="rememberBtn">
+        <input required type="checkbox" name="remember"> I agree to the <a href="/dist/privacy.html" target="_new">terms & privacy</a>
+      </label>
+                  <!-- For Google Captcha -->
+      <button class="g-recaptcha" 
+      data-sitekey="reCAPTCHA_site_key" 
+      data-callback='onSubmit' 
+      data-action='submit'>Submit</button>
+        
+      <button type="submit" id="signup" class="lgn" >Register</button>
+    </div>
+  </div>
+</div>
+  
+  <!-- End of top menu bar -->
+
+<!-- User Login menu -->
+<div id="loginAccount" class="modal"> 
+  <form class="modal-content animate">
+    <div class="warning-info">
+      <span onclick="document.getElementById('loginAccount').style.display='none'" class="close" title="Close Menu">&times;</span>
+     <h1>Login</h1>
+      <br>
+      <p>Please note, sharing passwords is stricly forbidden on the website
+    and can lead to the account being hacked or suspended. You can use the family settings to create an account
+  </p>
+    </div>
+    <div class="container">
+      <label for="uname"><b>Email:</b></label>
+      <input type="text" placeholder="Enter Email" name="uname" required>
+      <label for="psw"><b>Password:</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <button type="submit" class="lgn" id="login" >Login</button>
+      <label class="rememberBtn">
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+      <button class="g-recaptcha" 
+        data-sitekey="reCAPTCHA_site_key" 
+        data-callback='onSubmit' 
+        data-action='submit'>Submit</button>
+      <br>
+      <span class="create-account">Click here to <a href="createAccount">Create Account</a></span>
+    </div>
+    <div class="container">
+      <button type="button" onclick="document.getElementById('loginAccount').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="forgot-password">Click here if you <a href="#fgtpass">Forgot Password</a></span>
+    </div>
+  </form>
+</div>
+
+
+
+
+
 <!-- End of footer -->
-
-<!-- <script>
-  document.getElementById("userfirstname").placeholder = "Type name here..";
-</script> -->
-
   
   <script src="/js/main.js"></script>
   <script src="https://www.google.com/recaptcha/api.js"></script>
@@ -255,12 +323,34 @@ cursor: pointer;
     const auth = getAuth();
   
   
-    
-      // Prevents scrapping
-    //   DB.database().ref("/get/all/the/data").once("value", function (data) {
-    //   console.log(data.val());
-    // });
+    signup.addEventListener('click',(e) => {
   
+      var email = document.getElementById('useremail').value
+      var password = document.getElementById('password').value
+      var firstname = document.getElementById('firstname').value
+      var lastname = document.getElementById('lastname').value
+  
+      createUserWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+        // Signed in 
+        const user = userCredential.user;
+  
+        set(ref(database, 'users/' + user.uid),{
+          firstname: firstname,
+          lastname: lastname,
+          email: useremail,
+        })
+  
+        console.log('User account was created successfully')
+        alert('User account created!')
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        alert(errorMessage);
+        console.log('Error: User account failed to be created!')
+      });
+  });
   
   login.addEventListener('click',(e)=>{
     var email = document.getElementById('useremail').value
@@ -282,10 +372,10 @@ cursor: pointer;
       alert(errorMessage);
     });
   });
+  </script>
 
-
-  document.getElementById("userfirstname").placeholder = "placeholder";
-
+  <script>
+    document.getElementById("userfirstname").placeholder = firstname.uid;
   </script>
   
 

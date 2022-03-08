@@ -12,9 +12,7 @@ function openNav(x) {
     // x.style.display = 'none';
     console.log('Open NavBar!');
 }
-
-  
-  function closeNav(x) {
+function closeNav(x) {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
     document.body.style.backgroundColor = "white";
@@ -39,7 +37,6 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
-
 
 // Google Captcha
 function onSubmit(token) {

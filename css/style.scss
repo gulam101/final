@@ -345,15 +345,17 @@ span.forgot-password {
 // Underlines the active page we are on!
 .active
 ,i {
-	color: $hyperlinks;
 	text-decoration: underline;
 	text-transform: uppercase;
-	cursor: context-menu;
 }
 
-.active:hover,
-i:hover {
+.active {
+	color: red;
+}
+
+.active:hover {
 	color: $hyperlinks;
+	cursor: context-menu;
 }
 
 
@@ -564,6 +566,10 @@ footer {
 .container-fluid {
 	margin: 0;
 }
+
+.account-settings {
+	text-align: left;
+  }
 
 .row .social-media {
 	width: 100%;

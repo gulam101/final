@@ -328,15 +328,17 @@ span.forgot-password {
 
 .active
 , i {
-  color: #2a9df4;
   text-decoration: underline;
   text-transform: uppercase;
-  cursor: context-menu;
 }
 
-.active:hover,
-i:hover {
+.active {
+  color: red;
+}
+
+.active:hover {
   color: #2a9df4;
+  cursor: context-menu;
 }
 
 .sticky {
@@ -512,6 +514,10 @@ footer {
 
 .container-fluid {
   margin: 0;
+}
+
+.account-settings {
+  text-align: left;
 }
 
 .row .social-media {
