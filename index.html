@@ -48,13 +48,13 @@
     <div class="container">
       <h1 style="text-align: center;">Create Account</h1>
       <label for="uname"><b>First Name:</b></label>
-      <input type="text" id="first-name" placeholder="Enter your First Name" name="uname" required>
+      <input type="text" id="firstname" placeholder="Enter your First Name" name="uname" required>
       <label for="psw"><b>Last Name:</b></label>
-      <input type="text" id="last-name" placeholder="Enter your Last Name" name="uname" required>
+      <input type="text" id="lastname" placeholder="Enter your Last Name" name="uname" required>
       <label for="psw"><b>Password</b></label>
       <input type="password" id="password" placeholder="Password" name="psw" required>
       <label for="psw"><b>Email Address:</b></label>
-      <input type="text" id="user-email" placeholder="Confirm Email Address" name="email" required>
+      <input type="text" id="useremail" placeholder="Email Address" name="email" required>
       <!-- Terms and privacy agreement box -->
       <br>
       <label class="rememberBtn">
@@ -73,8 +73,7 @@
   
   <!-- End of top menu bar -->
 
-<!-- Login menu -->
-
+<!-- User Login menu -->
 <div id="loginAccount" class="modal"> 
   <form class="modal-content animate" action="/action_page.php" method="post">
     <div class="warning-info">
@@ -86,11 +85,11 @@
   </p>
     </div>
     <div class="container">
-      <label for="uname"><b>Username:</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+      <label for="uname"><b>Email:</b></label>
+      <input type="text" placeholder="Enter Email" name="uname" required>
       <label for="psw"><b>Password:</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
-      <button type="submit" class="lgn" >Login</button>
+      <button type="submit" class="lgn" id="login" >Login</button>
       <label class="rememberBtn">
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
@@ -490,8 +489,8 @@
 <script type="module">
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js";
-  import { getDatabase } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-database.js";
-  import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-auth.js";
+  import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-database.js";
+  import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-auth.js";
 
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
@@ -515,15 +514,22 @@
 
   signup.addEventListener('click',(e) => {
 
-    var email = document.getElementById('user-email').value
+    var email = document.getElementById('useremail').value
     var password = document.getElementById('password').value
-    var firstname = document.getElementById('first-name').value
-    var lastname = document.getElementById('last-name').value
+    var firstname = document.getElementById('firstname').value
+    var lastname = document.getElementById('lastname').value
 
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
       // Signed in 
       const user = userCredential.user;
+
+      set(ref(database, 'users/' + user.uid),{
+        firstname: firstname,
+        lastname: lastname,
+        email: useremail,
+      })
+
       console.log('User account was created successfully')
       alert('User account created!')
       // ...
@@ -537,10 +543,31 @@
     });
 
     // Prevents scrapping
-    firebase.database().ref("/get/all/the/data").once("value", function (data) {
-    console.log(data.val());
+  //   DB.database().ref("/get/all/the/data").once("value", function (data) {
+  //   console.log(data.val());
+  // });
 });
 
+login.addEventListener('click',(e)=>{
+  var email = document.getElementById('useremail').value
+  var password = document.getElementById('password').value
+  signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+
+    const dt = new Date();
+    update(ref(database, 'users/' + user.uid),{
+        last_login: dt,
+      })
+      alert('user logged in')
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    alert(errorMessage);
+  });
 });
 
 
