@@ -532,20 +532,13 @@
 
       console.log('User account was created successfully')
       alert('User account created!')
-      // ...
     })
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
       alert(errorMessage);
       console.log('Error: User account failed to be created!')
-      // ..
     });
-
-    // Prevents scrapping
-  //   DB.database().ref("/get/all/the/data").once("value", function (data) {
-  //   console.log(data.val());
-  // });
 });
 
 login.addEventListener('click',(e)=>{
@@ -568,7 +561,5 @@ login.addEventListener('click',(e)=>{
     alert(errorMessage);
   });
 });
-
-
 </script>
 </html>

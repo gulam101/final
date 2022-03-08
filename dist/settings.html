@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <script src="https://kit.fontawesome.com/67f4f70c85.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/img/favicon.ico">
     <title>Account Settings</title>
 </head>
 <body>
@@ -59,6 +60,7 @@
       </div>
   </div>
 
+
   
   <div class="container">
     <div class="start">
@@ -73,7 +75,7 @@
         <div class="container-sm">
             <form class="account-settings">
                 <label for="text">First Name:</label>
-                <input type="text" placeholder="+firstname+" id="fname" name="fname">
+                <input type="text" placeholder="" id="userfirstname" name="fname">
                 <label for="fphone">Current Phone: </label>
                 <input type="number" placeholder="Update Phone Number" id="fname" name="fname">
                 <label for="fname">Update Password </label>
@@ -218,6 +220,11 @@ cursor: pointer;
         </footer>
     </div>
 <!-- End of footer -->
+
+<!-- <script>
+  document.getElementById("userfirstname").placeholder = "Type name here..";
+</script> -->
+
   
   <script src="/js/main.js"></script>
   <script src="https://www.google.com/recaptcha/api.js"></script>
@@ -248,41 +255,12 @@ cursor: pointer;
     const auth = getAuth();
   
   
-    signup.addEventListener('click',(e) => {
-  
-      var email = document.getElementById('useremail').value
-      var password = document.getElementById('password').value
-      var firstname = document.getElementById('firstname').value
-      var lastname = document.getElementById('lastname').value
-  
-      createUserWithEmailAndPassword(auth, email, password)
-        .then((userCredential) => {
-        // Signed in 
-        const user = userCredential.user;
-  
-        set(ref(database, 'users/' + user.uid),{
-          firstname: firstname,
-          lastname: lastname,
-          email: useremail,
-        })
-  
-        console.log('User account was created successfully')
-        alert('User account created!')
-        // ...
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        alert(errorMessage);
-        console.log('Error: User account failed to be created!')
-        // ..
-      });
-  
+    
       // Prevents scrapping
     //   DB.database().ref("/get/all/the/data").once("value", function (data) {
     //   console.log(data.val());
     // });
-  });
+  
   
   login.addEventListener('click',(e)=>{
     var email = document.getElementById('useremail').value
@@ -304,6 +282,11 @@ cursor: pointer;
       alert(errorMessage);
     });
   });
+
+
+  document.getElementById("userfirstname").placeholder = "placeholder";
+
+  </script>
   
 
 

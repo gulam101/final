@@ -45,3 +45,4 @@ window.onclick = function(event) {
 function onSubmit(token) {
     document.getElementById("demo-form").submit();
 }
+
