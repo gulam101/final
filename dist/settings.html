@@ -10,227 +10,165 @@
     <title>Account Settings</title>
 </head>
 <body>
-
 <!-- Shares similar features from the previous modal! -->
 <div id="id04" class="modal">
-    <!-- Create Account menu -->
-    <div class="modal-content">
-      <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Menu">&times;</span>
-      <div class="container">
-        <h1 style="text-align: center;">Update User Account Information</h1>
-        
-        <label class="rememberBtn">
-            <p>Warning: You are going to update your user account information, please be advised this is going to take a while to process the updated
-                information. If you are experiencing login issues, please wait a few hours before attempting to log back in.
-            </p>
-        </label>
-        <a href="/dist/settings.html">
-        <button type="submit" class="register" >Proceed</button>
-        </a>
-        <a href="/dist/settings.html">
-        <button type="submit" class="register" >Return</button>
-        </a>
-      </div>
+  <!-- Create Account menu -->
+  <div class="modal-content">
+    <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Menu">&times;</span>
+    <div class="container">
+      <h1 style="text-align: center;">Update User Account Information</h1>
+      <label class="rememberBtn">
+          <p>Warning: You are going to update your user account information, please be advised this is going to take a while to process the updated
+              information. If you are experiencing login issues, please wait a few hours before attempting to log back in.
+          </p>
+      </label>
+      <a href="/dist/settings.html">
+      <button type="submit" class="register" >Proceed</button>
+      </a>
+      <a href="/dist/settings.html">
+      <button type="submit" class="register" >Return</button>
+      </a>
     </div>
   </div>
-    
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-3">
-                    <h2>Account Menu</h2>
-                    <hr>
-                        <ul>
-                            <li><a class="underline-anim" href="/index.html"><i class=""></i> &#127968; Home </a></li>
-                            <li><a class="active" href="#"><i class="fa-regular fa-user"></i> My Account </a></li>
-                            <li><a class="underline-anim" href="#"><i class="fa-regular fa-plus"></i> More courses </a></li>
-                            <li><a class="underline-anim" href="#"><i class="fa-regular fa-calendar"></i> Events </a></li>
-                            <li><a class="underline-anim" href="#"><i class="fa-regular fa-newspaper"></i> Articles </a></li>
-                            <li><a class="underline-anim" href="#"><i class="fa-regular fa-circle-question"></i> Help </a></li>
-                        </ul>
-                        <button onclick="document.getElementById('id04').style.display='block' "class="sign-out" style="width:auto;">Log Out</button>    
-            </div>
-            <div class="container">
-                <div class="start">
-                <h1>Account Settings</h1>
-                <p>If you want to update any account information, you can change the current
-                    information, and then click the "Update" button below which will then suspended
-                    a confirmation email which will ask if you wanted to update your information or
-                    not.
-                      <p>
-                </div>
-                <div class="row">
-                  <div class="col-sm">
-                    <div class="container-sm">
-                        <form class="account-settings">
-                            <label for="text">First Name:</label>
-                            <input type="text" placeholder="Update First Name" id="fname" name="fname">
-                            <label for="fname">Current Phone: </label>
-                            <input type="number" placeholder="Update Phone Number" id="fname" name="fname">
-                            <label for="fname">Update Password </label>
-                            <input type="password" placeholder="Update Password" id="fname" name="fname">
-                          </form>
+</div>
+  <div class="container-fluid">
+      <div class="row">
+            <div class="col-lg-9">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div id="mySidenav" class="sidenav">
+                        <h2>Account Menu</h2>
+                        <hr>
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a class="active" href="#"><i class="fa-regular fa-house-chimney"></i> Home </a>
+                        <a class="underline-anim" href="#"><i class="fa-regular fa-user"></i> My Account </a>
+                        <a class="underline-anim" href="#"><i class="fa-regular fa-plus"></i> More courses </a>
+                        <a class="underline-anim" href="#"><i class="fa-regular fa-calendar"></i> Events </a>
+                        <a class="underline-anim" href="#"><i class="fa-regular fa-newspaper"></i> Articles </a>
+                        <a class="underline-anim" href="#"><i class="fa-regular fa-circle-question"></i> Help </a>
+                        <div class="logout-btn-container">
+                          <button onclick="document.getElementById('id04').style.display='block' "class="sign-out" style="width:auto;">Log Out</button>   
+                        </div>    
+                      </div>
+                      <div id="main">
+                        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                      </div>  
                     </div>
                   </div>
-                <div class="col-sm">
-                    <div class="container-sm">
-                        <form class="account-settings">
-                            <label for="fname">Last Name: </label>
-                            <input type="text" placeholder="Update Last Name" id="fname" name="fname">
-                            <label for="fname">Current Email Address: </label>
-                            <input type="email" placeholder="Update Email Address" id="fname" name="fname">
-                            <label for="fname">Confirm Password </label>
-                            <input type="password" placeholder="Confirm Password again" id="fname" name="fname">
-                        </form>
-                    </div>
-                </div>
-                </div>
-                <div class="extra">
-                    <div class="row">
-                        <div class="social-media">
-                            <button onclick="document.getElementById('id04').style.display='block' "class="" style="width:auto;">Update Account Info</button>
-                            <p>Please note, updated informationt takes a few hours to update!</p>
-                            <h2>Link my Social Media Accounts</h2>
-                            <div class="icon-container">
-                                <a href="https://www.facebook.com/NHSwebsite" target="_new" class="fa fa-facebook"></a>
-                                <a href="https://twitter.com/nhsengland" target="_new" class="fa fa-twitter"></a>
-                                <a href="https://www.instagram.com/accounts/login/?next=/nhs/" target="_new" class="fa fa-instagram"></a>
-                                <a href="https://accounts.google.com/servicelogin" target="_new" class="fa fa-google-plus"></a>
-                                <p class="text-warning:"><b>Warning:</b> Clicking on these will take you to an external website, allow permission to sync with
-                                your social media account!</p>
-                              </div>
-                              <p>Setup Google Authenticator with your account to allow you to track people who log into your account</p>
-                              <button onclick="document.getElementById('id01').style.display='block' "class="" style="width:auto;">Google Authenticator</button>
-                              
-                        </div>
+            </div>
+      </div>
+  </div>
 
-                        <div class="account-container-btn">
-                            <p><b>Warning: This does not delete your account, if you wish to delete your
-                                account please follow the instructions in the email, this will allow you to delete your account!
-                            </b> </p>
-                            <button onclick="document.getElementById('id01').style.display='block' "class="warning" style="width:auto;">Deactivate Account</button>
-                        </div>
-                    </div>
-                </div>
-              </div>
+  
+  <div class="container">
+    <div class="start">
+    <h1>Account Settings</h1>
+    <p>If you want to update any account information, you can change the current
+        information, and then click the "Update" button below which will then suspended
+        a confirmation email which will ask if you wanted to update your information or
+        not. <p>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <div class="container-sm">
+            <form class="account-settings">
+                <label for="text">First Name:</label>
+                <input type="text" placeholder="Update First Name" id="fname" name="fname">
+                <label for="fphone">Current Phone: </label>
+                <input type="number" placeholder="Update Phone Number" id="fname" name="fname">
+                <label for="fname">Update Password </label>
+                <input type="password" placeholder="Update Password" id="fname" name="fname">
+              </form>
+        </div>
+      </div>
+    <div class="col-sm">
+        <div class="container-sm">
+            <form class="account-settings">
+                <label for="fname">Last Name: </label>
+                <input type="text" placeholder="Update Last Name" id="fname" name="fname">
+                <label for="fname">Current Email Address: </label>
+                <input type="email" placeholder="Update Email Address" id="fname" name="fname">
+                <label for="fname">Confirm Password </label>
+                <input type="password" placeholder="Confirm Password again" id="fname" name="fname">
+            </form>
+        </div>
+    </div>
+    </div>
+    <div class="extra">
+        <div class="row">
+            <div class="social-media">
+                <button onclick="document.getElementById('id04').style.display='block' "class="" style="width:auto;">Update Account Info</button>
+                <p>Please note, updated informationt takes a few hours to update!</p>
+                <h2>Link my Social Media Accounts</h2>
+                <div class="icon-container">
+                    <a href="https://www.facebook.com/NHSwebsite" target="_new" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com/nhsengland" target="_new" class="fa fa-twitter"></a>
+                    <a href="https://www.instagram.com/accounts/login/?next=/nhs/" target="_new" class="fa fa-instagram"></a>
+                    <a href="https://accounts.google.com/servicelogin" target="_new" class="fa fa-google-plus"></a>
+                    <p class="text-warning:"><b>Warning:</b> Clicking on these will take you to an external website, allow permission to sync with
+                    your social media account!</p>
+                  </div>
+                  <p>Setup Google Authenticator with your account to allow you to track people who log into your account</p>
+                  <button onclick="document.getElementById('id01').style.display='block' "class="" style="width:auto;">Google Authenticator</button>
+                  
             </div>
 
+            <div class="account-container-btn">
+                <p><b>Warning: This does not delete your account, if you wish to delete your
+                    account please follow the instructions in the email, this will allow you to delete your account!
+                </b> </p>
+                <button onclick="document.getElementById('id01').style.display='block' "class="warning" style="width:auto;">Deactivate Account</button>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
 
-  <style>
-      .modal-content animate {
-  padding-left: 50px;
-  padding-right: 50px;
-}
 
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+<style>
+.modal-content animate {
+padding-left: 50px;
+padding-right: 50px;
 }
 
 .modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background-color: black;
-  background-color: rgba(0, 0, 0, 0.4);
-  padding-top: 60px;
+display: none;
+position: fixed;
+z-index: 1;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: hidden;
+background-color: black;
+background-color: rgba(0, 0, 0, 0.4);
+padding-top: 60px;
 }
 
 .modal-content {
-  background-color: #222222;
-  margin: 5% auto 15% auto;
-  border: #2a9df4;
-  width: 80%;
+background-color: #222222;
+margin: 5% auto 15% auto;
+border: #2a9df4;
+width: 80%;
 }
 
 .close {
-	position: absolute;
-	right: 25px;
-	top: 0;
-	color: #fff;
-	font-size: 35px;
-	font-weight: bold;
-  }
+position: absolute;
+right: 25px;
+top: 0;
+color: #fff;
+font-size: 35px;
+font-weight: bold;
+}
 
-  .close:hover, .close:focus {
-	color: #2a9df4;
-	cursor: pointer;
-  }
-  </style>
+.close:hover, .close:focus {
+color: #2a9df4;
+cursor: pointer;
+}
+</style>
 
 
-            <style>
-                /* Move button to global */
-
-                .sign-out {
-                    color: #fff;
-                    background-color: red;
-                }
-                
-                 .account-settings {
-                            text-align: left;
-                        }
-
-                        .account-settings input {
-                            width: 100%;
-                        }
-
-                        .col-lg-3 {
-                            border: 1px solid #fff;
-                            height: 5%;
-                            color: #fff;
-                        }
-
-                        .col-lg-3 ul > li {
-                            list-style-type: none;
-                        }
-
-                        .container-fluid {
-                            margin: 0;
-                        }
-
-                        .row .social-media {
-                            width: 100%;
-                        }
-
-                .social-media h2 {
-                    text-align: center;
-                }
-
-                .extra {
-                    border: 1px solid #2a9df4;
-                    border-top: none;
-                    text-align: center;
-                }
-
-                /* Fixes the button not aligning correctly */
-                .account-container-btn {
-                    text-align: center;
-                    width: 100%;
-                }
-
-                .extra p {
-                    text-align: center;
-                    padding-left: 6px;
-                    padding-right: 6px;
-                }
-
-                .warning {
-                    background-color: rgba(0, 0, 0, 0.4);
-                    color: red;
-                }
-            </style>
-
-            <!-- Footer -->
+ <!-- Footer -->
     <div class="footer-container">
         <footer>
           <div class="container">
@@ -279,30 +217,9 @@ input[type=text], input[type=password] {
         </div>
         </footer>
     </div>
-      <!-- End of footer -->
+<!-- End of footer -->
   
-  
-      <!-- Script for the login menu modal! -->
-      <script>
-        // Get the modal
-        var modal = document.getElementById('id01');
-        
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-        </script>
-  
-  <!-- Script runs for the Google Captcha -->
-  <script>
-    function onSubmit(token) {
-      document.getElementById("demo-form").submit();
-    }
-  </script>
-  
-  <!-- For the Google Captcha API -->
+  <script src="/js/main.js"></script>
   <script src="https://www.google.com/recaptcha/api.js"></script>
       
 

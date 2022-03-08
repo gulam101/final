@@ -7,6 +7,18 @@ $defaultFont:'Roboto', sans-serif;
 $defaultFontColour: #fff;
 $hyperlinks: #2a9df4;
 
+// For the modal
+input[type=text], input[type=password],
+input[type=email], input[type=number] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+  }
+
 // Main
 * {
 	margin: 0;
@@ -34,6 +46,12 @@ button,
 	color: $defaultBG;
 	cursor: pointer;
 }
+
+.sign-out {
+	color: #fff;
+	background-color: red;
+}
+
 
 /* Ttile & Sub title! */
 .container-title {
@@ -70,7 +88,10 @@ button,
 	transition-duration: 0.4s;
 	cursor: pointer;
 	border: none;
+}
 
+.sign-up {
+	background: rgba(0,0,0,0.5);
 }
 
 // for the regsiter privacy link (for a)
@@ -89,7 +110,7 @@ p {
 }
 
 .animation {
-  background-color: black;
+	background: rgba(0,0,0,0.5);
   color: #fff;
   border: 1px solid $hyperlinks;
 }
@@ -245,7 +266,7 @@ span.forgot-password {
 	z-index: 1;
 	top: 0;
 	left: 0;
-	background-color: #111;
+	background: rgba(0,0,0,0.5);
 	overflow-x: hidden;
 	transition: 0.5s;
 	padding-top: 60px;
@@ -261,7 +282,17 @@ span.forgot-password {
   
 	  &:hover {
 		color: #f1f1f1;
+		text-decoration: none;
 	  }
+	}
+
+	.sidenav h1, h2 {
+		text-align: center;
+	}
+
+ .logout-btn-container {
+		text-align: center;
+		padding-top: 6px;
 	}
   
 	.closebtn {
@@ -271,10 +302,6 @@ span.forgot-password {
 	  font-size: 36px;
 	  margin-left: 50px;
 	}
-  }
-  
-  li a {
-	list-style-type: none;
   }
   
   #main {
@@ -444,7 +471,7 @@ i:hover {
 // Footer
 .footer-container {
 	// Forces the container to make space between each other!
-	padding-top: 100px;
+	padding-top: 30px;
 }
 
 footer {
@@ -461,8 +488,6 @@ footer {
 	border: 1px solid $hyperlinks;
 	background-color: #222222;
 }
-
-
 
 // Icon container (forces icons to centre)
 .icon-container {
@@ -536,5 +561,39 @@ footer {
 //   End of Privacy Page
 
 // Settings Page
+.container-fluid {
+	margin: 0;
+}
+
+.row .social-media {
+	width: 100%;
+}
+
+.social-media h2 {
+text-align: center;
+}
+
+.extra {
+border: 1px solid #2a9df4;
+border-top: none;
+text-align: center;
+}
+
+/* Fixes the button not aligning correctly */
+.account-container-btn {
+text-align: center;
+width: 100%;
+}
+
+.extra p {
+text-align: center;
+padding-left: 6px;
+padding-right: 6px;
+}
+
+.warning {
+background-color: rgba(0, 0, 0, 0.4);
+color: red;
+}
 
 // End of Settings Page

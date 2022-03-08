@@ -19,18 +19,17 @@
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a class="active" href="#"><i class="fa-regular fa-house-chimney"></i> Home </a>
-      <a class="underline-anim" href="#"><i class="fa-regular fa-user"></i> My Account </a>
+      <a class="underline-anim" href="/dist/settings.html"><i class="fa-regular fa-user"></i> My Account </a>
       <a class="underline-anim" href="#"><i class="fa-regular fa-plus"></i> More courses </a>
       <a class="underline-anim" href="#"><i class="fa-regular fa-calendar"></i> Events </a>
       <a class="underline-anim" href="#"><i class="fa-regular fa-newspaper"></i> Articles </a>
       <a class="underline-anim" href="#"><i class="fa-regular fa-circle-question"></i> Help </a>
     </div>
-    
     <div id="main">
       <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
     </div>
     
-    <script>
+    <!-- <script>
     function openNav() {
       document.getElementById("mySidenav").style.width = "250px";
       document.getElementById("main").style.marginLeft = "250px";
@@ -42,7 +41,7 @@
       document.getElementById("main").style.marginLeft= "0";
       document.body.style.backgroundColor = "white";
     }
-    </script>
+    </script> -->
        
     <div class="container-title">
       <div class="content">
@@ -51,50 +50,6 @@
         <p></p>
       </div>
     </div>
-
-
-    
-
-  
-
-
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    
 
 
 <!-- Shares similar features from the previous modal! -->
@@ -587,28 +542,7 @@ input[type=text], input[type=password] {
   </div>
     <!-- End of footer -->
 
-
-    <!-- Script for the login menu modal! -->
-    <script>
-      // Get the modal
-      var modal = document.getElementById('id01');
-      
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
-          if (event.target == modal) {
-              modal.style.display = "none";
-          }
-      }
-      </script>
-
-<!-- Script runs for the Google Captcha -->
-<script>
-  function onSubmit(token) {
-    document.getElementById("demo-form").submit();
-  }
-</script>
-
-<!-- For the Google Captcha API -->
+<script src="/js/main.js"></script>
 <script src="https://www.google.com/recaptcha/api.js"></script>
     
 

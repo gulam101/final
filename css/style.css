@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+input[type=text], input[type=password],
+input[type=email], input[type=number] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +34,11 @@ button,
 .coursebtn {
   color: #222222;
   cursor: pointer;
+}
+
+.sign-out {
+  color: #fff;
+  background-color: red;
 }
 
 /* Ttile & Sub title! */
@@ -61,6 +77,10 @@ button,
   border: none;
 }
 
+.sign-up {
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .privacy-link a {
   color: red;
 }
@@ -76,7 +96,7 @@ p {
 }
 
 .animation {
-  background-color: black;
+  background: rgba(0, 0, 0, 0.5);
   color: #fff;
   border: 1px solid #2a9df4;
 }
@@ -220,7 +240,7 @@ span.forgot-password {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background: rgba(0, 0, 0, 0.5);
   overflow-x: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -240,6 +260,16 @@ span.forgot-password {
 
 .sidenav a:hover {
   color: #f1f1f1;
+  text-decoration: none;
+}
+
+.sidenav .sidenav h1, .sidenav h2 {
+  text-align: center;
+}
+
+.sidenav .logout-btn-container {
+  text-align: center;
+  padding-top: 6px;
 }
 
 .sidenav .closebtn {
@@ -248,10 +278,6 @@ span.forgot-password {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
-}
-
-li a {
-  list-style-type: none;
 }
 
 #main {
@@ -409,7 +435,7 @@ i:hover {
 }
 
 .footer-container {
-  padding-top: 100px;
+  padding-top: 30px;
 }
 
 footer {
@@ -482,5 +508,40 @@ footer {
 
 .toolbar .fa:hover {
   color: #2a9df4;
+}
+
+.container-fluid {
+  margin: 0;
+}
+
+.row .social-media {
+  width: 100%;
+}
+
+.social-media h2 {
+  text-align: center;
+}
+
+.extra {
+  border: 1px solid #2a9df4;
+  border-top: none;
+  text-align: center;
+}
+
+/* Fixes the button not aligning correctly */
+.account-container-btn {
+  text-align: center;
+  width: 100%;
+}
+
+.extra p {
+  text-align: center;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.warning {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: red;
 }
 /*# sourceMappingURL=style.css.map */
