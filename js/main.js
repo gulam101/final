@@ -3,19 +3,27 @@ var begginer = "Train begginer ";
 // Correct spelling for this below later
 var intermediate = "Train intermediate ";
 var advanced = "Train advanced ";
-// document.getElementById("demo").innerHTML =
 
 // navbar function
-function openNav() {
+function openNav(x) {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
     document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-  }
+    // x.style.display = 'none';
+    console.log('Open NavBar!');
+}
+
   
-  function closeNav() {
+  function closeNav(x) {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
     document.body.style.backgroundColor = "white";
+    console.log('Closed NavBar!')
+}
+
+// Alerts
+function alerts() {
+    alert("Sucess")
 }
 
 // Notification Menu
