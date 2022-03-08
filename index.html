@@ -14,8 +14,8 @@
   <!-- Top menu bar -->
   <div class="top-menu-bar">
     <div class="btn-container">
-      <button onclick="document.getElementById('loginAccount').style.display='block' "class="sign-up animation" style="width:auto;">Login</button>
-      <button onclick="document.getElementById('createAccont').style.display='block' "class="sign-up animation" style="width:auto;">Register</button>
+      <button onclick="document.getElementById('loginAccount').style.display='block' "class="sign-up animation" style="width:auto;"><i class="fa-solid fa-user"></i> Login</button>
+      <button onclick="document.getElementById('createAccont').style.display='block' "class="sign-up animation" style="width:auto;"><i class="fa-solid fa-user"></i> Register</button>
     </div>
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -33,8 +33,8 @@
       <div class="content">
         <h1>Inspire to be yourself</h1>
           <p>Control who you are!</p>
-          <a href="">
-            <button>View our Courses</button>
+          <a href="/dist/courses.html">
+            <button onclick="document.getElementById('').style.display='block' "class="sign-up animation" style="width:auto;"><i class="fa-regular fa-plus"></i> View our Courses</button>
           </a>
       </div>
     </div>
@@ -154,30 +154,6 @@
     <!-- This div ends for the background img -->
   </div>
 
-<!-- Split up enrollment courses so each section has its own training -->
-
-
-    <!-- Enrollment Section -->
-    <div class="enrollSection">
-      
-
-        <!-- Search bar -->
-        <!-- <div class="wrap">
-          <div class="search">
-             <input type="text" class="searchTerm" placeholder="What are you looking for?">
-             <button type="submit" class="searchButton">
-               <i class="fa fa-search"></i>
-            </button>
-          </div>
-       </div> -->
-
-       <!-- Move search bar somewhere else -->
-
-       <!-- Temp solution, just using this as an example -->
-       <!-- https://stackoverflow.com/questions/12498604/create-a-search-box-to-find-text-on-page -->
-
-
-       <!-- Content to load up description for the legs section -->
 
        <!-- Shares similar features from the previous modal! -->
 <div id="createAccont" class="modal">
@@ -217,216 +193,79 @@
         <input required type="checkbox" name="remember"> I agree to the <a href="/dist/privacy.html" target="_new">terms & privacy</a>
       </label>
       <button type="submit" class="register" >Countinue</button>
+      </div>
     </div>
   </div>
+</div>
 
+<div class="row">
+  <div class="col">
+    <div class="card">
+      <img src="/w3images/jeans3.jpg" alt="Denim Jeans" style="width:100%">
+      <h1>Tailored Jeans</h1>
+      <p class="price">$19.99</p>
+      <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+    </div>  
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="/w3images/jeans3.jpg" alt="Denim Jeans" style="width:100%">
+      <h1>Tailored Jeans</h1>
+      <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+    </div>  
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="/w3images/jeans3.jpg" alt="Denim Jeans" style="width:100%">
+      <h1>Tailored Jeans</h1>
+      <p class="price">$19.99</p>
+      <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+    </div>
+  
+  </div>
 </div>
 
 
-<!-- End -->
-
-
-
- <!-- Modal for legs -->
-
-
- <!-- Beginner -->
-
- <div id="beginnerLegsOne" class="modal">
-
-  <div class="modal-content">
-    <span onclick="document.getElementById('beginnerLegsOne').style.display='none'" class="close" title="Close Menu">&times;</span>
-    <div class="container">
-      <p>Enroll into this beginner course to start training your legs, pro tip: make sure to
-        start at a level your comfortable with and then make your way to the advanced class.
-      </p>
-     
-
-      <button type="submit" class="lgn" >Enroll</button>
-
-    </div>
-  </div>
-
-</div>
-
-
-<!-- <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
 <style>
-  .homepage-img {
-    height: 500px;
-    width: 600px;
-  }
+.advertisement {
+  text-align: center;
+  display: inline-block;
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
 
 </style>
 
 
-<div class="container">
-  <div class="row">
-    <div class="col-m">
-      <img src="/img/homepage01.jpg" class="homepage-img" alt="Advertisement" srcset="">
-    </div>
-    <div class="col-sm-4">
-      <img src="/img/homepage02.jpg" class="homepage-img" alt="Advertisement" srcset="">
-    </div>
-    <div class="col-sm-4">
-      <img src="/img/homepage03.jpg" class="homepage-img" alt="Advertisement" srcset="">
-    </div>
-  </div>
-</div> -->
-
-
-
-
-        <!-- Legs Section Section -->
-        <div class="container">
-          <div class="start">
-          <h1>Enroll Into Courses</h1>
-            <p>Hover over the excerise to get started</p>
-          </div>
-          <div class="row">
-            <div class="col-sm">
-              <div class="container-sm">
-                <img src="/img/beginner running.jpg" alt="Train Beginner Legs">
-                <div class="overlay">
-                  <div class="text">
-                    <button onclick="document.getElementById('beginnerLegsOne').style.display='block' "class="coursebtn" style="width:auto;">Beginner Legs</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm">
-              <div class="container-sm">
-                <img src="/img/beginner running.jpg" alt="Train Intermediate Legs">
-                <div class="overlay">
-                  <div class="text">
-                    <button class="coursebtn"> Intermediate Legs </button>
-                  </div>
-                </div>
-              </div>
-              </div>
-            <div class="col-sm">
-              <div class="container-sm">
-                <img src="/img/beginner running.jpg" alt="Train Advanced Legs">
-                <div class="overlay">
-                  <div class="text">
-                    <button class="coursebtn"> Advanced Legs </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm">
-              <div class="container-sm">
-                <img src="/img/custom (1).jpg" alt="Custom Legs Training (build your own)">
-                <div class="overlay">
-                  <div class="text">
-                    <button class="coursebtn"> Build your own training </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End of enrollment section div (for legs training) -->
-      </div>
-
-  <div class="spacer"></div>
-
-  <!-- Stops stacking -->
-    <div class="enrollSection">
-        <!-- Arms -->
-        <div class="container">
-          <div class="row">
-            <div class="col-sm">
-              <div class="container-sm">
-                <img src="/img/beginner running.jpg" alt="Train Beginner Arms">
-                <div class="overlay">
-                  <div class="text">
-                    <button class="coursebtn"> Beginner Arms </button>
-                  </div>
-                </div>
-              </div>
-            </div>     
-            <div class="col-sm">
-              <div class="container-sm">
-                <img src="/img/beginner running.jpg" alt="Train Intermediate Arms">
-                <div class="overlay">
-                  <div class="text">
-                    <button class="coursebtn"> Intermediate Arms </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm">
-              <div class="container-sm">
-                <img src="/img/beginner running.jpg" alt="Train Advanced Arms">
-                <div class="overlay">
-                  <div class="text">
-                    <button class="coursebtn"> Advanced Arms </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm">
-              <div class="container-sm">
-                <img src="/img/custom (1).jpg" alt="Custom Legs Training (build your own)">
-                <div class="overlay">
-                  <div class="text">
-                    <button class="coursebtn"> Build your own training </button>
-                  </div>
-                </div>
-              </div>
-            </div>    
-          </div>
-        </div>
-    </div>
-<br>
-        <!-- Menu below bar -->
-
-        <div class="coursebar-container">   
-          <div class="toolbar">
-            <a href="#"> <i class="fa fa-angle-double-left"></i> </a>
-            <a href="#" class="active">1</a>
-             <a href="#">2</a>
-             <a href="#">3</a>
-             <a href="#">4</a>
-             <a href="#">...</a>
-          </div>
-        </div>
 
 
     <!-- Footer -->

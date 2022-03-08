@@ -30,6 +30,8 @@ body {
     font: $defaultFont !important;
 	background-color: $defaultBG !important;
 	color: $defaultFontColour !important;
+	overflow-x: hidden;
+
 }
 
 .bodycontainer {
