@@ -34,11 +34,10 @@
         <h1>Inspire to be yourself</h1>
           <p>Control who you are!</p>
           <a href="/dist/courses.html">
-            <button onclick="document.getElementById('').style.display='block' "class="sign-up animation" style="width:auto;"><i class="fa-regular fa-plus"></i> View our Courses</button>
+            <button onclick="document.getElementById('').style.display='block' "class="sign-up animation" style="width:auto;"><i class="fa-solid fa-plus"></i> View Our Courses</button>
           </a>
       </div>
     </div>
-
 
 <!-- Shares similar features from the previous modal! -->
 <div id="createAccont" class="modal">
@@ -201,37 +200,60 @@
 <div class="row">
   <div class="col">
     <div class="card">
-      <h1>Tailored Jeans</h1>
+      <h1>Social Media</h1>
+      <i class="fa-solid fa-heart"></i>
+      <p>Connect to your social media apps and post your activties and progress online, share with your friends!
+      </p>
+    </div> 
+  </div>
+  <div class="col">
+    <div class="card">
+      <h1>Progress</h1>
+      <i class="fa-solid fa-bars-progress"></i>
       <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
     </div> 
   </div>
   <div class="col">
     <div class="card">
-      <h1>Tailored Jeans</h1>
+      <h1>Control</h1>
+      <i class="fa-solid fa-gamepad"></i>
+      <p>Control your enviorment and decide on how long you should spend on each activity and set goals and limits!</p>
+    </div> 
+  </div>
+  <div class="col">
+    <div class="card">
+      <h1>Experience</h1>
+      <i class="fa-solid fa-check"></i>
       <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
     </div> 
   </div>
   <div class="col">
     <div class="card">
-      <h1>Tailored Jeans</h1>
-      <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-    </div> 
-  </div>
-  <div class="col">
-    <div class="card">
-      <h1>Tailored Jeans</h1>
-      <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-    </div> 
-  </div>
-  <div class="col">
-    <div class="card">
-      <h1>Tailored Jeans</h1>
+      <h1>Free</h1>
+      <i class="fa-solid fa-bag-shopping"></i>
       <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
     </div> 
   </div>
 </div>
 
-
+<div class="row">
+  <div class="col-lg-6">
+    <h1>Free Courses for life!</h1>
+    <p>Enroll into our courses free online, track, manage and compare courses to each other.
+      Compare your current progress and keep on tracking your current progress until you feel satisfied that
+      you can move onto the new courses.</p>
+      
+    <p>
+      New courses can be uploaded online, so make sure you keep finding those
+      new courses daily.
+    </p>
+  </div>
+    <div class="col-lg-6">
+      <div class="advertisement-bg-right">
+        <img src="/img/advertisement.jpg" alt="advertisement image">
+      </div>
+    </div>
+</div>
 
 
 <style>
@@ -240,23 +262,32 @@
   max-width: 300px;
   margin: auto;
   text-align: center;
-  color:#000;
-}
-
-.card button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
+  color: #fff;
+  background: rgba(0,0,0,0.1);
+  padding-left: 2px;
+  padding-right: 2px;
   text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
 }
 
-.card button:hover {
+.advertisement-bg-right {
+  /* Change this to a lighter dark colour */
+  background-color: black;
+  text-align: center;
+}
+
+.advertisement-bg-right > img {
+  height: 10%;
+  width: 70%;
+}
+
+.card > i {
+  text-align: center;
+  font-size: 26px;
+}
+
+.card:hover {
   opacity: 0.7;
+  cursor: context-menu;
 }
 
 </style>
