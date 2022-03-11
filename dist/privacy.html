@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Terms & Conditions</title>
@@ -79,7 +79,7 @@
         <!-- Terms and privacy agreement box -->
         <br>
         <label class="rememberBtn">
-          <input type="checkbox" name="remember"> I agree to the <a href="/dist/privacy.html" target="_new">terms & privacy</a>
+          <input type="checkbox" name="remember"> I agree to the <a href="dist/privacy.html" target="_new">terms & privacy</a>
         </label>
   
         <!-- <div class="container">
@@ -152,16 +152,6 @@
   .modal-content animate {
     padding-left: 50px;
     padding-right: 50px;
-  }
-  
-  input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
   }
   
   .modal {
@@ -291,7 +281,7 @@
                 <br>
                 <a href="https://www.nhs.uk" target="_new" >NHS</a>
                 <br>
-                <a href="/dist/privacy.html" target="_new" >Terms and Privacy</a>
+                <a href="dist/privacy.html" target="_new" >Terms and Privacy</a>
               </div>
               <!-- End of General -->
               <div class="col-sm">
@@ -329,20 +319,9 @@
         <!-- End of footer -->
 
 
-        <!-- For the modal, api, google other stuff -->
-         <!-- Script for the login menu modal! -->
-    <script>
-        // Get the modal
-        var modal = document.getElementById('id01');
-        
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-        </script>
-  
+        <script src="js/main.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+            
   <!-- Script runs for the Google Captcha -->
   <script>
     function onSubmit(token) {
