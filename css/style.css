@@ -104,13 +104,7 @@ p {
   text-transform: uppercase;
 }
 
-.sign-up:visited {
-  border-radius: 50%;
-  border: 1px solid #2a9df4;
-  text-transform: uppercase;
-}
-
-.signup:active {
+.sign-up:is(:visited, :active) {
   border-radius: 50%;
   border: 1px solid #2a9df4;
   text-transform: uppercase;
@@ -367,16 +361,6 @@ span.forgot-password {
   cursor: context-menu;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
-}
-
 .enrollSection > h1, .enrollSection p {
   text-align: center;
 }
@@ -452,8 +436,7 @@ span.forgot-password {
 
 .coursebar-container {
   background-color: #121212;
-  margin-left: 30%;
-  margin-right: 30%;
+  margin-inline: 30%;
 }
 
 .toolbar {
@@ -476,7 +459,7 @@ footer {
   margin: 0;
 }
 
-.container .row {
+footer .container .row {
   border: 1px solid #2a9df4;
   background-color: #222222;
 }

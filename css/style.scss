@@ -108,7 +108,7 @@ p {
 }
 
 .animation {
-	background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.5);
   color: #fff;
   border: 1px solid $hyperlinks;
 }
@@ -120,17 +120,11 @@ p {
   text-transform: uppercase;
 }
 
-.sign-up:visited {
+.sign-up:is(:visited, :active) {
 	border-radius: 50%;
 	border: 1px solid $hyperlinks;
 	text-transform: uppercase;
   }
-
-.signup:active {
-	border-radius: 50%;
-	border: 1px solid $hyperlinks;
-	text-transform: uppercase;
-}
 
 
 // 2. Buttons used in login menu
@@ -143,10 +137,7 @@ button {
 	font-size: 16px;
 	margin: 4px 2px;
 	transition-duration: 0.4s;
-
   }
-
-
 
 // Top menu bar
 /*Note: For the image, I used Pixabay! */
@@ -185,7 +176,7 @@ button {
 	opacity: 0.3;
 }
 
-
+// Homepage
 // Advertisement section for homepage
 .card {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -388,18 +379,6 @@ span.forgot-password {
 	cursor: context-menu;
 }
 
-
-// Makes this navbar follow the user
-.sticky {
-	position: fixed;
-	top: 0;
-	width: 100%;
-  }
-  
-  .sticky + .content {
-	padding-top: 60px;
-  }
-
 // End of Navbar
 
 
@@ -489,8 +468,7 @@ span.forgot-password {
 // Toolbar menu for courses
 .coursebar-container {
 	background-color: #121212;
-	margin-left: 30%;
-	margin-right: 30%;
+	margin-inline: 30%;
   }
 
   .toolbar {
@@ -500,7 +478,7 @@ span.forgot-password {
   }
 
 
-// Footer
+// Footer (Use inline stead of a class)
 .footer-container {
 	// Forces the container to make space between each other!
 	padding-top: 30px;
@@ -516,7 +494,7 @@ footer {
 	margin: 0;
 }
 
-.container .row {
+footer .container .row {
 	border: 1px solid $hyperlinks;
 	background-color: #222222;
 }
@@ -569,14 +547,12 @@ footer {
 	font-size: 30px;
 }
 
-
 // End of Footer
 
 // Privacy Page
 .privacyBackground {
 	background-color: #f8f8f8;
 }
-
 
 // Test
 
