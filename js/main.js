@@ -19,6 +19,10 @@ function closeNav(x) {
     console.log('Closed NavBar!')
 }
 
+// Register form for radio buttons to
+// stop them all being clicked
+document.getElementById("age-range").checked = true;
+
 // Alerts
 function alerts() {
     alert("Sucess")
