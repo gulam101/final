@@ -5,195 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/67f4f70c85.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/img/favicon.ico">
     <title>Terms & Conditions</title>
 </head>
 <body>
 
     <!-- Start of side NavBar -->
-    <div class="nav">
-      <div class="navContainer">
-        <ul>
-          <li><a class="underline-anim" href="/index.html">Home</a></li>
-          <li><a class="underline-anim" href="#">My Account</a></li>
-          <li><a class="underline-anim" href="#">More courses</a></li>
-          <li><a class="underline-anim" href="#">Events</a></li>
-          <li><a class="underline-anim" href="#">Articles</a></li>
-          <li><a class="underline-anim" href="#">Help</a></li>
-        </ul>
+    <div class="priv-nav">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="underline-anim" href="/index.html"><i class="fa-regular fa-house-chimney"></i> Home </a>
+        <a class="underline-anim" href="dist/settings.html"><i class="fa-regular fa-user"></i> My Account </a>
+        <a class="underline-anim" href="dist/courses.html"><i class="fa-regular fa-plus"></i> Courses </a>
+        <a class="underline-anim" href="#"><i class="fa-regular fa-calendar"></i> Events </a>
+        <a class="underline-anim" href="#"><i class="fa-regular fa-newspaper"></i> Articles </a>
+        <a class="underline-anim" href="#"><i class="fa-regular fa-circle-question"></i> Help </a>
       </div>
+    </div>
+    <div id="main">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav(this)">&#9776;</span>
     </div>
      <!-- End of Side NavBar -->
 
-
-<!-- Top menu bar -->
-<div class="top-menu-bar-priv">
-    <div class="btn-container">
-      <button onclick="document.getElementById('id01').style.display='block' "class="sign-up animation" style="width:auto;">Login</button>
-      <button onclick="document.getElementById('createAccont').style.display='block' "class="sign-up animation" style="width:auto;">Register</button>
-</div>
-
-
-     
-      <br>
-      <br>
-      <br>
-      <br>
-
-      <!-- Shares similar features from the previous modal! -->
-<div id="createAccont" class="modal">
-
-    <!-- Signup menu -->
-    <div class="modal-content">
-      <span onclick="document.getElementById('createAccont').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <div class="container">
-        <h1 style="text-align: center;">Create Account</h1>
-        <label for="uname"><b>First Name:</b></label>
-        <input type="text" placeholder="Enter your First Name" name="uname" required>
-  
-        <label for="psw"><b>Last Name:</b></label>
-        <input type="text" placeholder="Enter your Last Name" name="psw" required>
-  
-        <label for="psw"><b>Email Address:</b></label>
-        <input type="text" placeholder="Somebody@gmail.com" name="psw" required>
-  
-        <label for="psw"><b>Repeat Email Address:</b></label>
-        <input type="text" placeholder="Repeat Email Address!" name="psw" required>
-  
-        <!-- Checkbox for "Where did you find us?" -->
-        <label class="rememberBtn">
-          <p>Where did you hear about us?</p>
-          <br>
-          <input type="checkbox" name="remember"> YouTube
-          <br>
-          <input type="checkbox" name="remember"> Friend Recommendation
-          <br>
-          <input type="checkbox" name="remember"> Local Gym
-          <br>
-          <input type="checkbox" name="remember"> Events
-        </label>
-  
-        <!-- Terms and privacy agreement box -->
-        <br>
-        <label class="rememberBtn">
-          <input type="checkbox" name="remember"> I agree to the <a href="dist/privacy.html" target="_new">terms & privacy</a>
-        </label>
-  
-        <!-- <div class="container">
-          <p style="text-align: ;">Please enter your date of birth</p>
-          <form action="/action_page.php">
-            <label for="birthday">Birthday:</label>
-            <input type="date" id="birthday" name="birthday">
-            <input type="submit">
-          </form>
-        </div> -->
-  
-                    <!-- For Google Captcha -->
-        <!-- <button class="g-recaptcha" 
-        data-sitekey="reCAPTCHA_site_key" 
-        data-callback='onSubmit' 
-        data-action='submit'>Submit</button>
-           -->
-        <button type="submit" class="lgn" >Countinue</button>
-  
-      </div>
-    </div>
-  
-  </div>
-    
-    <!-- End of top menu bar -->
-  
-  <!-- Login menu -->
-  
-  <div id="id01" class="modal">
-    
-    <form class="modal-content animate" action="/action_page.php" method="post">
-      <div class="warning-info">
-        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Menu">&times;</span>
-       <h1>Login</h1>
-        <br>
-        <p>Please note, sharing passwords is stricly forbidden on the website
-      and can lead to the account being hacked or suspended. You can use the family settings to create an account
-    </p>
-      </div>
-  
-      <div class="container">
-        <label for="uname"><b>Username:</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
-  
-        <label for="psw"><b>Password:</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-          
-        <button type="submit" class="lgn" >Login</button>
-        <label class="rememberBtn">
-          <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label>
-        <button class="g-recaptcha" 
-          data-sitekey="reCAPTCHA_site_key" 
-          data-callback='onSubmit' 
-          data-action='submit'>Submit</button>
-        <br>
-        <span class="create-account">Click here to <a href="createAccount">Create Account</a></span>
-      </div>
-  
-      <div class="container">
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-        <span class="forgot-password">Click here if you <a href="#fgtpass">Forgot Password</a></span>
-      </div>
-    </form>
-  </div>
-  
-  
-  <!-- This style is needed for the modal -->
-  <style>
-  .modal-content animate {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-  
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-color: black;
-    background-color: rgba(0, 0, 0, 0.4);
-    padding-top: 60px;
-  }
-  
-  .modal-content {
-    background-color: #222222;
-    margin: 5% auto 15% auto;
-    border: #2a9df4;
-    width: 80%;
-  }
-  
-  .close {
-      position: absolute;
-      right: 25px;
-      top: 0;
-      color: #fff;
-      font-size: 35px;
-      font-weight: bold;
-    }
-  
-    .close:hover, .close:focus {
-      color: #2a9df4;
-      cursor: pointer;
-    }
-  </style>
-  <!-- End of the modal -->
-
-
   <div class="bodycontainer">
-  
-
-
     <div class="privcontainer">
     <section class="privacy">
         <h1>Privacy</h1>
@@ -317,7 +153,7 @@
         <!-- End of footer -->
 
 
-        <script src="js/main.js"></script>
+        <script src="/js/main.js"></script>
         <script src="https://www.google.com/recaptcha/api.js"></script>
             
   <!-- Script runs for the Google Captcha -->

@@ -35,8 +35,8 @@ body {
 }
 
 .bodycontainer {
-	background-color: ghostwhite;
-	color: black;
+	background-color: $defaultBG;
+	color: ghostwhite;
 }
 
 
@@ -307,6 +307,8 @@ span.forgot-password {
 	  }
 	}
 
+
+
 	.sidenav h1, h2 {
 		text-align: center;
 	}
@@ -337,6 +339,7 @@ span.forgot-password {
 .underline-anim {
 	position: relative;
 	color: #0087ca;
+
   
 	&:after {
 	  content: '';
@@ -355,6 +358,10 @@ span.forgot-password {
 	  transform: scaleX(1);
 	  transform-origin: bottom left;
 	}
+  }
+
+  .underline-anim:hover {
+	  text-transform: uppercase;
   }
 
 
