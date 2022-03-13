@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/67f4f70c85.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
     <title>Healthy excerise online</title>
 </head>
 <body>
@@ -347,6 +348,39 @@
 <script src="js/main.js"></script>
 <script src="https://www.google.com/recaptcha/api.js"></script>
     
+
+<style>
+  @media (min-width: 32em) {
+    .cc-window.cc-banner {
+      padding: 1.5em 1.8em
+    }
+    .cc-message {
+      font-size: 0.9em;
+      line-height: 1.4
+    }
+    .cc-compliance {
+      padding-left: 4em
+    }
+  }
+  </style>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+  <script>
+  window.cookieconsent.initialise({
+   cookie: {
+      domain : "/",
+      name: "cookie_consent",
+    },
+    palette:{
+      popup:  { background: "#e8ecf7"  },
+      button: { background: "#181818"},
+    },
+    content:{
+      message: "We use cookies to offer you a better browsing experience and analyze site traffic. If you continue to use this site, you consent to our use of cookies",
+    },
+  });
+  </script>
+
+
 
 </body>
 <script type="module">

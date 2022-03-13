@@ -1,8 +1,4 @@
 // Global
-var begginer = "Train begginer ";
-// Correct spelling for this below later
-var intermediate = "Train intermediate ";
-var advanced = "Train advanced ";
 
 // navbar function
 function openNav(x) {
@@ -30,10 +26,27 @@ function alerts() {
 
 // Notification Menu
 
-// Cookie consent
 
-// Modal script
+// beginner (all for modal scripts)
+var modal = document.getElementById('beginner-leg');
+var modal = document.getElementById('beginner-arms');
+var modal = document.getElementById('beginner-chest');
+
+// Intermediate
+var modal = document.getElementById('intermediate-legs');
+var modal = document.getElementById('intermediate-arms');
+var modal = document.getElementById('intermediate-chest');
+
+// Advanced
+var modal = document.getElementById('advanced-legs');
+var modal = document.getElementById('advanced-arms');
+var modal = document.getElementById('advanced-chest');
+
+// Other
+var modal = document.getElementById('custom');
 var modal = document.getElementById('id01');
+// End of modal scripts
+
       
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
