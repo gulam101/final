@@ -157,23 +157,10 @@ button {
   opacity: 0.3;
 }
 
-.card {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.1);
-  padding-left: 2px;
-  padding-right: 2px;
-  text-align: center;
-}
-
 .advertisement-bg-right,
 .advertisement-bg-left {
   /* Change this to a lighter dark colour */
-  background-color: black;
+  background-color: #222222;
   text-align: center;
 }
 
@@ -190,6 +177,14 @@ button {
 .card:hover {
   opacity: 0.7;
   cursor: context-menu;
+}
+
+.newsletter {
+  background-color: #121111;
+}
+
+.wrapper-small {
+  padding-top: 50px;
 }
 
 .warning-info {
