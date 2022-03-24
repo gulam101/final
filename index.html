@@ -60,14 +60,13 @@
       <!-- Terms and privacy agreement box -->
       <br>
       <label class="rememberBtn">
-        <input required type="checkbox" name="remember"> I agree to the <a href="dist/privacy.html" target="_new">terms & privacy</a>
+        <input required type="checkbox" name="remember" checked="true"> I agree to the <a href="dist/privacy.html" target="_new">terms & privacy</a>
       </label>
-                  <!-- For Google Captcha -->
+      <!-- For Google Captcha -->
       <button class="g-recaptcha" 
       data-sitekey="reCAPTCHA_site_key" 
       data-callback='onSubmit' 
       data-action='submit'>Submit</button>
-        
       <button type="submit" id="signup" class="lgn" >Register</button>
     </div>
   </div>
@@ -392,7 +391,7 @@
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
 
-  // Your web app's Firebase configuration
+  // Firebase configuration
   const firebaseConfig = {
     apiKey: "AIzaSyAFl4zPpywP0FvItwQ4-HLNf4TDYoHIS9M",
     authDomain: "dissertation-pro.firebaseapp.com",
