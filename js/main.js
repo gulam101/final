@@ -1,4 +1,8 @@
 // Global
+function enrollment() {
+    alert("Successfully enrolled into course, please refresh the courses page!");
+}
+
 
 // navbar function
 function openNav(x) {

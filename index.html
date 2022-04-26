@@ -458,17 +458,18 @@ login.addEventListener('click',(e)=>{
   });
 });
 
+
+
+
+
 const user = auth.currentUser;
 onAuthStateChanged(auth, (user) => {
-  if (user) {
-    // User is signed in, see docs for a list of available properties
-    // https://firebase.google.com/docs/reference/js/firebase.User
-    const uid = user.uid;
-    // ...
-  } else {
-    // User is signed out
-    // ...
-  }
+  signOut(auth).then(() => {
+  // Sign-out successful.
+}).catch((error) => {
+  // If there is a error, they will be alerted
+  alert('Error: unknown error');
+  });
 });
 </script>
 </html>

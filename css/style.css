@@ -559,6 +559,11 @@ footer .container .row {
   color: red;
 }
 
+.text-warning {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 #arrows {
   text-decoration: none;
   cursor: pointer;
